@@ -133,7 +133,7 @@ const Bubbles = ({
 
   return (
     <div
-      className="absolute w-full h-screen flex justify-center items-center overflow-hidden rounded-full"
+      className="absolute w-full h-svh flex justify-center items-center overflow-hidden rounded-full"
       style={{ zIndex, left: x, top: y }}
     >
       <div

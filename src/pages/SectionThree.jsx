@@ -7,11 +7,11 @@ const aspekta = localFont({
   src: "../fonts/AspektaVF.woff2",
 });
 
-const ppeditorial = localFont({
+const ppeditorialul = localFont({
   src: "../fonts/ppeditorialold-ultralightitalic.otf",
 });
 
-const ppeditorialul = localFont({
+const ppeditorial = localFont({
   src: "../fonts/ppeditorialold-italic.otf",
 });
 
@@ -47,7 +47,7 @@ const SectionThree = () => {
           It’s all quite,
           <br />
           Si
-          <span className={`${ppeditorial.className} text-main `}>m</span>ple
+          <span className={`${ppeditorialul.className} text-main `}>m</span>ple
         </h1>
         <p
           className={`${aspekta.className} text-sm md:text-base xl:text-lg font-medium text-slate-200 mt-10 md:mt-7 xl:mt-10 w-full md:w-1/2`}
@@ -59,7 +59,7 @@ const SectionThree = () => {
       <div className="flex w-full md:w-4/5 justify-center md:justify-end md:-mt-16 xl:-mt-28">
         <div className="relative w-36 h-36 md:w-44 md:h-44 z-15 left-5 bg-white rounded-full flex flex-col justify-center items-center text-3xl">
           <h1
-            className={`${ppeditorialul.className} font-medium text-5xl mt-3 md:mt-0`}
+            className={`${ppeditorial.className} font-medium text-5xl mt-3 md:mt-0`}
           >
             700+
           </h1>
@@ -74,7 +74,7 @@ const SectionThree = () => {
         </div>
         <div className="w-36 h-36 md:w-44 md:h-44 z-10 bg-main rounded-full flex flex-col justify-center items-center text-3xl">
           <h1
-            className={`${ppeditorialul.className} ml-4 md:ml-0 font-medium text-5xl`}
+            className={`${ppeditorial.className} ml-4 md:ml-0 font-medium text-5xl`}
           >
             100+
           </h1>
@@ -84,7 +84,7 @@ const SectionThree = () => {
         </div>
         <div className="relative w-36 h-36 md:w-44 md:h-44 -left-5 bg-white rounded-full flex flex-col justify-center items-center text-3xl">
           <h1
-            className={`${ppeditorialul.className} font-medium text-5xl mt-3 md:mt-0`}
+            className={`${ppeditorial.className} font-medium text-5xl mt-3 md:mt-0`}
           >
             4+
           </h1>

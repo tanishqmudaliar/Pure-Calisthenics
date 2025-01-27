@@ -10,12 +10,13 @@
   },
   "dependencies": {
     "clsx": "^2.1.1",
-    "framer-motion": "^11.16.4",
+    "framer-motion": "^11.18.2",
     "gsap": "^3.12.7",
     "next": "15.1.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "sass": "^1.83.4",
+    "swiper": "^11.2.1",
     "tailwind-merge": "^2.6.0"
   },
   "devDependencies": {

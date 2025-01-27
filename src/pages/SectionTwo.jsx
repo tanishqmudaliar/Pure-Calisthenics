@@ -1,12 +1,12 @@
 import React from "react";
 import localFont from "next/font/local";
-import EnlargeBubbles from "./EnlargeBubbles";
+import SwipeCards from "../components/SwipeCards";
 
 const aspekta = localFont({
   src: "../fonts/AspektaVF.woff2",
 });
 
-const ppeditorial = localFont({
+const ppeditorialul = localFont({
   src: "../fonts/ppeditorialold-ultralightitalic.otf",
 });
 
@@ -39,7 +39,8 @@ const SectionTwo = () => {
           className={`${aspekta.className} text-5xl md:text-6xl xl:text-7xl font-light text-black`}
         >
           Calisthenics broken down,
-          <br />J<span className={`${ppeditorial.className} text-main`}>u</span>
+          <br />J
+          <span className={`${ppeditorialul.className} text-main`}>u</span>
           st for you
         </h1>
         <p
@@ -49,7 +50,7 @@ const SectionTwo = () => {
           you'll ever need. With us you will experiece:
         </p>
       </div>
-      <EnlargeBubbles bubbles={bubbles} />
+      <SwipeCards />
     </div>
   );
 };

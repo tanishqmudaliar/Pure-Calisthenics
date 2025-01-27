@@ -1,13 +1,7 @@
 "use client";
 import { useEffect, useRef } from "react";
-import localFont from "next/font/local";
-import Image from "next/image";
 import { gsap } from "gsap";
 import Header from "@/components/Header";
-
-const aspekta = localFont({
-  src: "../fonts/AspektaVF.woff2",
-});
 
 const NavBar = () => {
   const imageRef = useRef(null);
@@ -50,9 +44,5 @@ const NavBar = () => {
     </div>
   );
 };
-
-// mr-1 mt-9 right-24
-
-//left-7 md:left-10 top-7 md:top-5 lg:top-3
 
 export default NavBar;
