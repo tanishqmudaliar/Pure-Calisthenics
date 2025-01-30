@@ -1,9 +1,11 @@
 "use client";
 import Benefits from "@/components/Benefits";
 import localFont from "next/font/local";
-import React from "react";
+import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import AOS from "aos";
+import "aos/dist/aos.css";
 gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
@@ -53,10 +55,16 @@ const ppeditorialul = localFont({
 });
 
 const SectionFive = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className="w-full h-fit bg-white flex flex-col items-center justify-center">
       <div className="w-full bg-white pt-10 md:pt-20 pb-8 flex justify-center items-center z-10">
-        <div
+        <h1
+          data-aos="fade-left"
+          data-aos-duration="500"
           className={`${aspekta.className} w-4/5 text-start text-3xl md:text-6xl xl:text-7xl font-light text-black`}
         >
           We make sure you recieve
@@ -65,7 +73,7 @@ const SectionFive = () => {
             more
           </span>{" "}
           than you invest
-        </div>
+        </h1>
       </div>
       <div className="w-4/5 mb-20 flex flex-col justify-center items-center">
         {projects.map((project, index) => {

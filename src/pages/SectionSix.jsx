@@ -1,6 +1,9 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import localFont from "next/font/local";
 import { Rating } from "@mui/material";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const aspekta = localFont({
   src: "../fonts/AspektaVF.woff2",
@@ -56,10 +59,16 @@ const testimonials = [
 ];
 
 const SectionSix = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className="w-full h-fit bg-secondary flex flex-col justify-center items-center py-20">
       <div className="w-4/5 mx-10 md:mx-10 xl:mx-14">
         <h1
+          data-aos="fade-right"
+          data-aos-duration="500"
           className={`${aspekta.className} text-5xl md:text-6xl xl:text-7xl font-light text-white`}
         >
           Real Results,
@@ -69,6 +78,9 @@ const SectionSix = () => {
           ations
         </h1>
         <p
+          data-aos="fade-right"
+          data-aos-delay="150"
+          data-aos-duration="500"
           className={`${aspekta.className} text-sm md:text-base xl:text-lg font-medium text-slate-200 mt-10`}
         >
           See How Calisthenics Changed Lives and Built Unshakable Strength
@@ -76,7 +88,12 @@ const SectionSix = () => {
       </div>
       <div className="w-4/5 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-items-center gap-4 mt-10">
         {testimonials.map((testimonial, index) => (
-          <div key={index} className="w-[95%] h-fit rounded-lg p-4 bg-white">
+          <div
+            data-aos="zoom-in-up"
+            data-aos-duration="500"
+            key={index}
+            className="w-[95%] h-fit rounded-lg p-4 bg-white"
+          >
             <img
               src={testimonial.image}
               className="w-full h-fit rounded-lg"

@@ -11,8 +11,8 @@ const ppeditorialul = localFont({
 
 const SectionOne = () => {
   return (
-    <div className="w-full h-fit min-h-svh bg-main flex flex-col justify-center items-center">
-      <div className="mx-10 flex flex-col justify-center items-center">
+    <div className="w-full h-fit min-h-svh bg-main flex flex-col justify-center items-center md:mt-10">
+      <div className="mx-7 flex flex-col justify-center items-center">
         <h1
           className={`${aspekta.className} w-full text-start text-base md:text-2xl font-light text-white`}
         >
@@ -31,7 +31,7 @@ const SectionOne = () => {
         </h1>
       </div>
       <h1
-        className={`${aspekta.className} w-4/5 text-center text-xl xl:text-2xl font-light text-white mt-5 mb-10`}
+        className={`${aspekta.className} w-4/5 text-center text-xl xl:text-2xl font-light text-white mt-5 mb-7 xl:mb-10`}
       >
         Calisthenics helps you achieve fat loss, build raw strength, enhance
         core stability, and boost long-lasting athletic performance.

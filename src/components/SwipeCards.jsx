@@ -12,7 +12,7 @@ const ppeditorial = localFont({
 
 const SwipeCards = () => {
   return (
-    <div className="w-full md:w-4/5 h-fit flex justify-center md:justify-end items-center py-10 md:pb-14">
+    <div className="w-full md:w-4/5 h-fit flex justify-center md:justify-end items-center py-10 md:pb-14 xl:-mt-28">
       <div className="w-max">
         <Swiper
           effect={"cards"}
