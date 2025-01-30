@@ -1,56 +1,7 @@
 "use client";
-import Benefits from "@/components/Benefits";
-import Modal from "@/components/Modal";
+import React, { useEffect, useRef } from "react";
 import localFont from "next/font/local";
-import React, { useState, useRef, useEffect } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
-
-const projects = [
-  {
-    title: "Muscle Development",
-    subtitle: "Build Lean Mass",
-    src: "muscle-development.jpg",
-    color: "#FF5733",
-  },
-  {
-    title: "Visible Fat Loss",
-    subtitle: "Shed Stubborn Fat",
-    src: "fat-loss.jpg",
-    color: "#27AE60",
-  },
-  {
-    title: "Noticeable Strength Gains",
-    subtitle: "Increase Your Power",
-    src: "strength-gains.jpg",
-    color: "#2980B9",
-  },
-  {
-    title: "Core Strength & Stability",
-    subtitle: "Stronger Core Foundation",
-    src: "core-strength.jpg",
-    color: "#8E44AD",
-  },
-  {
-    title: "Moving Better Every Day",
-    subtitle: "Improved Daily Mobility",
-    src: "improved-mobility.jpg",
-    color: "#F4D03F",
-  },
-  {
-    title: "Mastering Bodyweight Control",
-    subtitle: "Control Your Movement",
-    src: "body-weight-control.jpg",
-    color: "#E67E22",
-  },
-  {
-    title: "Better Confidence & Personality",
-    subtitle: "Elevate Your Presence",
-    src: "confidence.jpg",
-    color: "#C0392B",
-  },
-];
+import gsap from "gsap";
 
 const aspekta = localFont({
   src: "../fonts/AspektaVF.woff2",
@@ -60,57 +11,111 @@ const ppeditorialul = localFont({
   src: "../fonts/ppeditorialold-ultralightitalic.otf",
 });
 
+const ppeditorial = localFont({
+  src: "../fonts/ppeditorialold-italic.otf",
+});
+
 const SectionFour = () => {
-  const [modal, setModal] = useState({ active: false, index: 0 });
-  const titleRef = useRef(null);
-  const containerRef = useRef(null);
+  const firstText = useRef(null);
+  const secondText = useRef(null);
+  const thirdText = useRef(null);
+  let xPercent = 0;
 
   useEffect(() => {
-    gsap.to(titleRef.current, {
-      scrollTrigger: {
-        pin: titleRef.current,
-        trigger: containerRef.current,
-        start: "top top",
-        end: "bottom bottom",
-        scrub: true,
-      },
+    gsap.set(thirdText.current, {
+      left: thirdText.current.getBoundingClientRect().width,
     });
+    requestAnimationFrame(animate);
   }, []);
 
+  const animate = () => {
+    if (xPercent > 0) {
+      xPercent = -100;
+    }
+    gsap.set(firstText.current, { xPercent: xPercent });
+    gsap.set(secondText.current, { xPercent: xPercent });
+    gsap.set(thirdText.current, { xPercent: xPercent });
+    requestAnimationFrame(animate);
+    xPercent += 0.075;
+  };
   return (
-    <div
-      ref={containerRef}
-      className="w-full h-fit bg-white flex flex-col items-center justify-center"
-    >
-      <div
-        ref={titleRef}
-        className="w-full bg-white p-7 pt-10 md:mt-0 md:p-10 flex justify-center items-center z-10"
-      >
-        <div
-          className={`${aspekta.className} w-4/5 text-start text-3xl md:text-6xl xl:text-7xl font-light text-black`}
+    <div className="w-full h-fit md:h-svh bg-secondary flex flex-col justify-evenly items-center pt-20 pb-10">
+      <div className="w-4/5 mx-10 md:mx-10 xl:mx-14">
+        <h1
+          className={`${aspekta.className} text-5xl md:text-6xl xl:text-7xl font-light text-white`}
         >
-          We make sure you recieve
+          It’s all quite,
           <br />
-          <span className={`${ppeditorialul.className} text-main `}>
-            more
-          </span>{" "}
-          than you invest
+          Si
+          <span className={`${ppeditorialul.className} text-main `}>m</span>ple
+        </h1>
+        <p
+          className={`${aspekta.className} text-sm md:text-base xl:text-lg font-medium text-slate-200 mt-10`}
+        >
+          We're obsessed with you feeling strong, light & and in control of your
+          health.
+        </p>
+      </div>
+      <div className="flex w-full md:w-4/5 justify-center md:justify-end my-14 md:my-10">
+        <div className="relative w-36 h-36 md:w-44 md:h-44 z-15 left-5 bg-white rounded-full flex flex-col justify-center items-center text-3xl">
+          <h1
+            className={`${ppeditorial.className} font-medium text-5xl mt-3 md:mt-0`}
+          >
+            700+
+          </h1>
+          <h1
+            className={`${aspekta.className} text-xs text-center font-medium uppercase`}
+          >
+            students
+            <span> </span>
+            <br className="md:hidden" />
+            trained
+          </h1>
+        </div>
+        <div className="w-36 h-36 md:w-44 md:h-44 z-10 bg-main rounded-full flex flex-col justify-center items-center text-3xl">
+          <h1
+            className={`${ppeditorial.className} ml-4 md:ml-0 font-medium text-5xl`}
+          >
+            100+
+          </h1>
+          <h1 className={`${aspekta.className} text-xs font-medium uppercase`}>
+            transformed
+          </h1>
+        </div>
+        <div className="relative w-36 h-36 md:w-44 md:h-44 -left-5 bg-white rounded-full flex flex-col justify-center items-center text-3xl">
+          <h1
+            className={`${ppeditorial.className} font-medium text-5xl mt-3 md:mt-0`}
+          >
+            4+
+          </h1>
+          <h1
+            className={`${aspekta.className} text-xs text-center font-medium uppercase`}
+          >
+            years of
+            <span> </span>
+            <br className="md:hidden" />
+            experience
+          </h1>
         </div>
       </div>
-      <div className="w-4/5 mb-20 flex flex-col justify-center items-center">
-        {projects.map((project, index) => {
-          return (
-            <Benefits
-              index={index}
-              title={project.title}
-              subtitle={project.subtitle}
-              setModal={setModal}
-              key={index}
-            />
-          );
-        })}
+      <div className="w-screen h-fit bg-white">
+        <div
+          className={`${aspekta.className} relative whitespace-nowrap flex text-xs md:text-base xl:text-lg uppercase font-medium py-2 text-black`}
+        >
+          <h1 ref={firstText}>
+            Dr Jigar Maniar, Dr Devesh Tiwari, Anchal Pilani (Yoga), Aleena
+            Joshi (Yoga), Jay Shah (London), Akhilesh & Shilpa (Australia),
+          </h1>
+          <h1 ref={secondText} className="ml-2">
+            Dr Jigar Maniar, Dr Devesh Tiwari, Anchal Pilani (Yoga), Aleena
+            Joshi (Yoga), Jay Shah (London), Akhilesh & Shilpa (Australia),
+          </h1>
+          <h1 ref={thirdText} className="ml-2">
+            Dr Jigar Maniar, Dr Devesh Tiwari, Anchal Pilani (Yoga), Aleena
+            Joshi (Yoga), Jay Shah (London), Akhilesh & Shilpa (Australia),
+          </h1>
+        </div>
       </div>
-      <Modal modal={modal} projects={projects} />
     </div>
   );
 };

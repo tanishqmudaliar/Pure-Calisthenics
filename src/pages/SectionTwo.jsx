@@ -1,6 +1,5 @@
 import React from "react";
 import localFont from "next/font/local";
-import SwipeCards from "../components/SwipeCards";
 
 const aspekta = localFont({
   src: "../fonts/AspektaVF.woff2",
@@ -11,46 +10,47 @@ const ppeditorialul = localFont({
 });
 
 const SectionTwo = () => {
-  const bubbles = [
-    {
-      id: 1,
-      top: "70%",
-      right: "40%",
-      transformOrigin: "bottom left",
-    },
-    {
-      id: 2,
-      top: "55%",
-      right: "10%",
-      transformOrigin: "center",
-    },
-    {
-      id: 3,
-      top: "5%",
-      right: "0%",
-      transformOrigin: "top right",
-    },
-  ];
-
   return (
-    <div className="w-full h-screen bg-white flex justify-start items-center flex-col overflow-hidden">
-      <div className="w-4/5 m-10 md:m-24 xl:m-28">
-        <h1
-          className={`${aspekta.className} text-5xl md:text-6xl xl:text-7xl font-light text-black`}
-        >
-          Calisthenics broken down,
-          <br />J
-          <span className={`${ppeditorialul.className} text-main`}>u</span>
-          st for you
-        </h1>
-        <p
-          className={`${aspekta.className} text-sm md:text-base xl:text-lg font-medium text-neutral-500 mt-10 md:mt-7 xl:mt-10 w-full md:w-1/2`}
-        >
-          We only teach what we are good at and that is pretty much everything
-          you'll ever need. With us you will experiece:
-        </p>
+    <div className="bg-secondary w-full h-fit flex flex-col justify-center items-center">
+      <div className="my-20 w-full flex flex-col justify-center items-center">
+        <div className="w-4/5">
+          <h1
+            className={`${aspekta.className} text-5xl md:text-6xl xl:text-7xl font-light text-white text-center`}
+          >
+            About{" "}
+            <span className={`${ppeditorialul.className} text-main`}>us</span>
+          </h1>
+          <p
+            className={`${aspekta.className} text-sm md:text-base xl:text-lg font-medium text-slate-200 mt-5 text-center`}
+          >
+            We help you build strength, agility, and control so you move, feel,
+            and perform at your best every day.
+          </p>
+        </div>
+        <div className="w-full mt-10 flex flex-col md:flex-row justify-evenly items-center">
+          <div className="w-80 h-80 md:w-56 md:h-56 xl:w-80 xl:h-80 bg-[url(/images/about-1.jpg)] bg-cover bg-center my-5 flex justify-center items-center group">
+            <div className="bg-white w-full h-full flex justify-center items-center bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300">
+              <h1 className="w-full text-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+                Text1
+              </h1>
+            </div>
+          </div>
+          <div className="w-80 h-80 md:w-56 md:h-56 xl:w-80 xl:h-80 bg-[url(/images/about-1.jpg)] bg-cover bg-center my-5 flex justify-center items-center group">
+            <div className="bg-white w-full h-full flex justify-center items-center bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300">
+              <h1 className="w-full text-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+                Text1
+              </h1>
+            </div>
+          </div>
+          <div className="w-80 h-80 md:w-56 md:h-56 xl:w-80 xl:h-80 bg-[url(/images/about-1.jpg)] bg-cover bg-center my-5 flex justify-center items-center group">
+            <div className="bg-white w-full h-full flex justify-center items-center bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300">
+              <h1 className="w-full text-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+                Text1
+              </h1>
+            </div>
+          </div>
+        </div>
       </div>
-      <SwipeCards />
     </div>
   );
 };

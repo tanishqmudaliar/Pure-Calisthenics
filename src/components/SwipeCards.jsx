@@ -12,13 +12,13 @@ const ppeditorial = localFont({
 
 const SwipeCards = () => {
   return (
-    <div className="static md:absolute w-full h-fit md:h-screen flex items-center justify-end md:items-end">
-      <div className="w-full md:w-96 h-96 md:mr-10 md:mb-5 xl:mb-14 xl:mr-20 flex justify-center items-center">
+    <div className="w-full md:w-4/5 h-fit flex justify-center md:justify-end items-center py-10 md:pb-14">
+      <div className="w-max">
         <Swiper
           effect={"cards"}
           grabCursor={true}
           modules={[EffectCards]}
-          className="w-80 h-80 xl:w-96 xl:h-96 rounded-full"
+          className="w-80 h-80 xl:w-96 xl:h-96"
         >
           <SwiperSlide className="grid place-items-center place-content-center rounded-full text-white bg-main">
             <div
