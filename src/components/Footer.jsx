@@ -9,7 +9,7 @@ import Phone from "@mui/icons-material/Phone";
 
 const Footer = () => {
   return (
-    <div className="bg-secondary w-full h-fit flex py-5 justify-center items-center">
+    <div className="bg-secondary w-full h-fit flex py-5 justify-center items-center text-white">
       <div className="w-full max-w-96 flex justify-evenly items-center">
         <Tooltip title="Facebook">
           <IconButton
