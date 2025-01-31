@@ -18,7 +18,7 @@ const SwipeCards = () => {
           effect={"cards"}
           grabCursor={true}
           modules={[EffectCards]}
-          className="w-80 h-80 xl:w-96 xl:h-96"
+          className="w-swipecards h-swipecards xl:w-96 xl:h-96"
         >
           <SwiperSlide className="grid place-items-center place-content-center rounded-full text-white bg-main">
             <div

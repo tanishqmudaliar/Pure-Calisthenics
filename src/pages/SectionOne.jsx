@@ -11,7 +11,7 @@ const ppeditorialul = localFont({
 
 const SectionOne = () => {
   return (
-    <div className="w-full h-fit min-h-svh bg-main flex flex-col justify-center items-center md:mt-10">
+    <div className="w-full h-fit min-h-svh bg-main flex flex-col justify-center items-center pt-20 sm:pb-10 md:pb-0">
       <div className="mx-7 flex flex-col justify-center items-center">
         <h1
           className={`${aspekta.className} w-full text-start text-base md:text-2xl font-light text-white`}
@@ -38,12 +38,12 @@ const SectionOne = () => {
       </h1>
       <hr className="w-2/5 text-white" />
       <h1
-        className={`${aspekta.className} w-3/4 text-center text-2xl md:text-3xl font-light text-white my-5`}
+        className={`${aspekta.className} w-3/4 text-center text-2xl md:text-3xl font-light text-white my-4`}
       >
         Want to know more call us
       </h1>
       <button
-        className={`${aspekta.className} bg-white w-fit h-fit p-4 text-lg rounded-full border-2 font-semibold border-black text-main`}
+        className={`${aspekta.className} bg-white w-fit h-fit p-4 text-lg rounded-full font-semibold text-main cursor-pointer hover:text-secondary`}
       >
         Book a Demo Session
       </button>

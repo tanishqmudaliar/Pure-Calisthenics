@@ -38,7 +38,7 @@ const NavBar = () => {
               Blog
             </h1>
             <button
-              className={`${aspekta.className} bg-main w-fit h-fit p-3 text-lg rounded-full border-2 font-semibold border-black text-white`}
+              className={`${aspekta.className} bg-main w-fit h-fit p-3 text-lg rounded-full font-semibold text-white cursor-pointer`}
             >
               Book a Demo Session
             </button>

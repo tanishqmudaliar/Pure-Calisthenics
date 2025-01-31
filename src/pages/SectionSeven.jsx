@@ -27,18 +27,18 @@ const SectionSeven = () => {
           Journey
         </h1>
         <p
-          className={`${aspekta.className} w-4/5 text-xl xl:text-2xl font-normal text-secondary text-center mt-5`}
+          className={`${aspekta.className} w-4/5 text-xl xl:text-2xl font-normal text-secondary mt-5 text-justify`}
         >
-          Join us for a personalized demo session where you’ll get hands-on
+          Join us for a personalized demo session where you will get hands-on
           training and expert guidance. Feel the difference calisthenics can
           make in your fitness journey!
         </p>
         <button
-          className={`${aspekta.className} bg-white w-fit h-fit p-4 text-lg rounded-full border-2 font-semibold border-black text-main my-7`}
+          className={`${aspekta.className} bg-white w-fit h-fit p-4 text-lg rounded-full font-semibold text-main my-7 hover:text-secondary`}
         >
           Book a Demo Session
         </button>
-        <div className="w-full mb-10 flex flex-col xl:flex-row justify-center items-center text-white">
+        <div className="w-[90%] mb-10 flex flex-col xl:flex-row justify-center items-start text-white">
           <h1 className={`${aspekta.className} text-lg mr-3 flex`}>
             <li className="text-secondary" />
             Personalized Training Plans

@@ -43,7 +43,7 @@ const SectionTwo = () => {
           <div
             data-aos="zoom-in-up"
             data-aos-duration="500"
-            className="w-80 h-80 md:w-56 md:h-56 xl:w-80 xl:h-80 bg-[url(/images/about-1.jpg)] bg-cover bg-center my-5 flex justify-center items-center group"
+            className="w-box h-box md:w-56 md:h-56 xl:w-80 xl:h-80 bg-[url(/images/about-1.jpg)] bg-cover bg-center my-5 flex justify-center items-center group"
           >
             <div className="bg-white w-full h-full flex justify-center items-center bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300">
               <h1 className="w-full text-center opacity-0 group-hover:opacity-100 transition-all duration-300">
@@ -54,7 +54,7 @@ const SectionTwo = () => {
           <div
             data-aos="zoom-in-up"
             data-aos-duration="500"
-            className="w-80 h-80 md:w-56 md:h-56 xl:w-80 xl:h-80 bg-[url(/images/about-1.jpg)] bg-cover bg-center my-5 flex justify-center items-center group"
+            className="w-box h-box md:w-56 md:h-56 xl:w-80 xl:h-80 bg-[url(/images/about-1.jpg)] bg-cover bg-center my-5 flex justify-center items-center group"
           >
             <div className="bg-white w-full h-full flex justify-center items-center bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300">
               <h1 className="w-full text-center opacity-0 group-hover:opacity-100 transition-all duration-300">
@@ -65,7 +65,7 @@ const SectionTwo = () => {
           <div
             data-aos="zoom-in-up"
             data-aos-duration="500"
-            className="w-80 h-80 md:w-56 md:h-56 xl:w-80 xl:h-80 bg-[url(/images/about-1.jpg)] bg-cover bg-center my-5 flex justify-center items-center group"
+            className="w-box h-box md:w-56 md:h-56 xl:w-80 xl:h-80 bg-[url(/images/about-1.jpg)] bg-cover bg-center my-5 flex justify-center items-center group"
           >
             <div className="bg-white w-full h-full flex justify-center items-center bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300">
               <h1 className="w-full text-center opacity-0 group-hover:opacity-100 transition-all duration-300">

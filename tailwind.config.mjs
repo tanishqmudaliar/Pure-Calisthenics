@@ -9,6 +9,16 @@ const config = {
   ],
   theme: {
     extend: {
+      height: {
+        box: "90vw",
+        swipecards: "80vw",
+        circle: "34vw",
+      },
+      width: {
+        box: "90vw",
+        swipecards: "80vw",
+        circle: "34vw",
+      },
       animation: {
         "infinite-scroll": "infinite-scroll 50s linear infinite",
       },

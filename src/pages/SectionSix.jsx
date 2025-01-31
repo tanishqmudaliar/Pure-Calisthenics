@@ -69,7 +69,7 @@ const SectionSix = () => {
         <h1
           data-aos="fade-right"
           data-aos-duration="500"
-          className={`${aspekta.className} text-5xl md:text-6xl xl:text-7xl font-light text-white`}
+          className={`${aspekta.className} text-4xl md:text-6xl xl:text-7xl font-light text-white`}
         >
           Real Results,
           <br />
