@@ -10,40 +10,34 @@ gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
   {
-    title: "Muscle Development",
-    subtitle: "Build Lean Mass",
-    body: "Gain muscle through bodyweight exercises that enhance strength, endurance, and overall athletic performance.",
+    title: "Every 7 Days",
+    body: "Better Exercise Capacity",
   },
   {
-    title: "Visible Fat Loss",
-    subtitle: "Shed Stubborn Fat",
-    body: "Burn excess fat efficiently with dynamic calisthenics workouts that boost metabolism and sculpt your physique.",
+    title: "Every 15 Days",
+    body: "Improved Strength & Better Abilities",
   },
   {
-    title: "Noticeable Strength Gains",
-    subtitle: "Increase Your Power",
-    body: "Develop raw power by mastering bodyweight resistance, improving endurance, and unlocking explosive strength.",
+    title: "Every Month",
+    body: "Improved Daily Movements",
   },
   {
-    title: "Core Strength & Stability",
-    subtitle: "Stronger Core Foundation",
-    body: "Strengthen your core for better posture, balance, and total body control in every movement.",
+    title: "Every 45 Days",
+    body: "Visible Fat Loss",
   },
   {
-    title: "Moving Better Every Day",
-    subtitle: "Improved Daily Mobility",
-    body: "Enhance flexibility, mobility, and coordination to move effortlessly and prevent injuries in daily life.",
+    title: "Every 2 Months",
+    body: "Progress to Advanced Exercises",
   },
   {
-    title: "Mastering Bodyweight Control",
-    subtitle: "Control Your Movement",
-    body: "Refine your coordination, balance, and technique to execute precise and controlled bodyweight movements.",
+    title: "Every 3 Months",
+    body: "Surroundings Observe Changes in You",
   },
   {
-    title: "Better Confidence & Personality",
-    subtitle: "Elevate Your Presence",
-    body: "Boost self-confidence, discipline, and charisma by building a strong, athletic, and well-balanced physique.",
+    title: "Every 6 Months",
+    body: "Better Personality, More Confident, Feeling Light",
   },
+  { title: "Every 1 Year", body: "Significant Transformation" },
 ];
 
 const aspekta = localFont({
@@ -65,25 +59,19 @@ const SectionFive = () => {
         <h1
           data-aos="fade-left"
           data-aos-duration="500"
-          className={`${aspekta.className} w-4/5 text-start text-3xl md:text-6xl xl:text-7xl font-light text-black`}
+          className={`${aspekta.className} w-4/5 text-start text-3xl md:text-6xl font-light text-black`}
         >
-          We make sure you recieve
-          <br />
+          Results & Changes In Calisthenics considering{" "}
           <span className={`${ppeditorialul.className} text-main `}>
-            more
+            4 days
           </span>{" "}
-          than you invest
+          a week of consistency
         </h1>
       </div>
       <div className="w-4/5 mb-20 flex flex-col justify-center items-center">
         {projects.map((project, index) => {
           return (
-            <Benefits
-              title={project.title}
-              subtitle={project.subtitle}
-              body={project.body}
-              key={index}
-            />
+            <Benefits title={project.title} body={project.body} key={index} />
           );
         })}
       </div>

@@ -38,10 +38,10 @@ const SectionFour = () => {
           data-aos="fade-right"
           data-aos-delay="150"
           data-aos-duration="500"
-          className={`${aspekta.className} text-sm md:text-base xl:text-lg font-medium text-slate-200 mt-10`}
+          className={`${aspekta.className} w-full md:w-1/2 text-sm md:text-base xl:text-lg font-medium text-slate-200 mt-10`}
         >
-          We're obsessed with you feeling strong, light & and in control of your
-          health.
+          You just have to book a call, and we will create a goal for you. After
+          a fitness assessment, you can start training with us.
         </p>
       </div>
       <div className="flex w-full md:w-4/5 justify-center md:justify-end my-14 md:my-10">

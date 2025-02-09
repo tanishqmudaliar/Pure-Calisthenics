@@ -9,6 +9,9 @@ const config = {
   ],
   theme: {
     extend: {
+      textShadow: {
+        highlight: "1.5px 1.5px 0px black",
+      },
       height: {
         box: "90vw",
         swipecards: "80vw",
@@ -40,6 +43,7 @@ const config = {
     },
   },
   plugins: [
+    require("tailwindcss-textshadow"),
     plugin(function ({ addUtilities }) {
       addUtilities({
         ".burger": {

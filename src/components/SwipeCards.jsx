@@ -22,25 +22,89 @@ const SwipeCards = () => {
         >
           <SwiperSlide className="grid place-items-center place-content-center rounded-full text-white bg-main">
             <div
-              className={`${ppeditorial.className} w-fit text-4xl xl:text-5xl`}
+              className={`${ppeditorial.className} w-3/4 text-center text-4xl`}
             >
               Self Confidence
             </div>
             <h1 className="uppercase">⟵ Swipe</h1>
           </SwiperSlide>
-          <SwiperSlide className="grid place-items-center place-content-center rounded-full text-white bg-main1">
+          <SwiperSlide className="grid place-items-center place-content-center rounded-full text-white bg-main">
             <div
-              className={`${ppeditorial.className} w-fit text-4xl xl:text-5xl`}
+              className={`${ppeditorial.className} w-3/4 text-center text-4xl`}
             >
-              Strength
+              Positive Self Image
             </div>
             <h1 className="uppercase">⟵ Swipe ⟶</h1>
           </SwiperSlide>
-          <SwiperSlide className="grid place-items-center place-content-center rounded-full text-white bg-main2">
+          <SwiperSlide className="grid place-items-center place-content-center rounded-full text-white bg-main">
             <div
-              className={`${ppeditorial.className} w-fit text-4xl xl:text-5xl`}
+              className={`${ppeditorial.className} w-3/4 text-center text-4xl`}
             >
-              Clarity
+              Better Personality
+            </div>
+            <h1 className="uppercase">⟵ Swipe ⟶</h1>
+          </SwiperSlide>
+          <SwiperSlide className="grid place-items-center place-content-center rounded-full text-white bg-main">
+            <div
+              className={`${ppeditorial.className} w-3/4 text-center text-4xl`}
+            >
+              Strong Mindset
+            </div>
+            <h1 className="uppercase">⟵ Swipe ⟶</h1>
+          </SwiperSlide>
+          <SwiperSlide className="grid place-items-center place-content-center rounded-full text-white bg-main">
+            <div
+              className={`${ppeditorial.className} w-3/4 text-center text-4xl`}
+            >
+              Raw Strength
+            </div>
+            <h1 className="uppercase">⟵ Swipe ⟶</h1>
+          </SwiperSlide>
+          <SwiperSlide className="grid place-items-center place-content-center rounded-full text-white bg-main">
+            <div
+              className={`${ppeditorial.className} w-3/4 text-center text-4xl`}
+            >
+              Sports Performance
+            </div>
+            <h1 className="uppercase">⟵ Swipe ⟶</h1>
+          </SwiperSlide>
+          <SwiperSlide className="grid place-items-center place-content-center rounded-full text-white bg-main">
+            <div
+              className={`${ppeditorial.className} w-3/4 text-center text-4xl`}
+            >
+              Social Confidence
+            </div>
+            <h1 className="uppercase">⟵ Swipe ⟶</h1>
+          </SwiperSlide>
+          <SwiperSlide className="grid place-items-center place-content-center rounded-full text-white bg-main">
+            <div
+              className={`${ppeditorial.className} w-3/4 text-center text-4xl`}
+            >
+              Better First Impressions
+            </div>
+            <h1 className="uppercase">⟵ Swipe ⟶</h1>
+          </SwiperSlide>
+          <SwiperSlide className="grid place-items-center place-content-center rounded-full text-white bg-main">
+            <div
+              className={`${ppeditorial.className} w-3/4 text-center text-4xl`}
+            >
+              Life Long Longetivity
+            </div>
+            <h1 className="uppercase">⟵ Swipe ⟶</h1>
+          </SwiperSlide>
+          <SwiperSlide className="grid place-items-center place-content-center rounded-full text-white bg-main">
+            <div
+              className={`${ppeditorial.className} w-3/4 text-center text-4xl`}
+            >
+              Attractive Physique
+            </div>
+            <h1 className="uppercase">⟵ Swipe ⟶</h1>
+          </SwiperSlide>
+          <SwiperSlide className="grid place-items-center place-content-center rounded-full text-white bg-main">
+            <div
+              className={`${ppeditorial.className} w-3/4 text-center text-4xl`}
+            >
+              Control Over Bodyweight
             </div>
             <h1 className="uppercase">Swipe ⟶</h1>
           </SwiperSlide>

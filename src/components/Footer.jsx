@@ -35,7 +35,7 @@ const Footer = () => {
           <Tooltip title="Instagram">
             <IconButton
               target="_blank"
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/pure__calisthenics"
               className="w-fit mt-1.5"
               color="ochre"
             >

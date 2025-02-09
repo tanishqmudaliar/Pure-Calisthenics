@@ -32,16 +32,15 @@ const NavBar = () => {
               Home
             </h1>
             <h1 className={`${aspekta.className} text-lg cursor-pointer`}>
-              About
+              Services
             </h1>
-            <h1 className={`${aspekta.className} text-lg cursor-pointer`}>
-              Blog
-            </h1>
-            <button
-              className={`${aspekta.className} bg-main w-fit h-fit p-3 text-lg rounded-full font-semibold text-white cursor-pointer`}
+            <a
+              className={`${aspekta.className} bg-main bg-opacity-30 w-fit h-fit py-2 px-6 text-lg rounded-full font-semibold text-main cursor-pointer border-2 border-main hover:bg-opacity-100 hover:text-white transition-all duration-200`}
+              href="https://api.whatsapp.com/send?phone=9773968119"
+              target="_blank"
             >
               Book a Demo Session
-            </button>
+            </a>
           </div>
           <div className="flex xl:hidden justify-center items-center">
             <h1

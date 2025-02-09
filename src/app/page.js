@@ -14,7 +14,7 @@ export default function Home() {
       <NavBar />
       <SectionOne />
       <SectionTwo />
-      <SectionThree />
+      {/* <SectionThree /> */}
       <SectionFour />
       <SectionFive />
       <SectionSix />

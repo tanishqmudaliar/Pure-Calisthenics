@@ -13,25 +13,15 @@ const aspekta = localFont({
 const navItems = [
   {
     title: "Home",
-    href: "/",
   },
   {
-    title: "About",
-    href: "/",
-  },
-  {
-    title: "Blog",
-    href: "/",
+    title: "Services",
   },
   {
     title: "Book a Session",
-    href: "/",
   },
 ];
 const Menu = () => {
-  const pathname = usePathname();
-  const [selectedIndicator, setSelectedIndicator] = useState(pathname);
-
   return (
     <motion.div
       variants={menuSlide}
@@ -43,23 +33,13 @@ const Menu = () => {
     >
       <div className="box-border h-full m-24 mt-32 flex flex-col justify-between">
         <div
-          onMouseLeave={() => {
-            setSelectedIndicator(pathname);
-          }}
           className={`${aspekta.className} flex flex-col text-5xl gap-7 font-light`}
         >
           <div className="text-gray-300 border-b border-gray-300 text-xs pb-1 my-5 uppercase">
             <p className="font-semibold text-xs">Navigation</p>
           </div>
           {navItems.map((data, index) => {
-            return (
-              <Data
-                key={index}
-                data={{ ...data, index }}
-                isActive={selectedIndicator == data.href}
-                setSelectedIndicator={setSelectedIndicator}
-              ></Data>
-            );
+            return <Data key={index} data={{ ...data, index }}></Data>;
           })}
           <div
             className={`${aspekta.className} grid grid-cols-2 gap-5 w-full text-xs uppercase text-gray-300 font-normal pb-1 my-5 md:flex md:justify-between cursor-pointer`}
