@@ -71,9 +71,9 @@ const SectionSix = () => {
           data-aos-duration="500"
           className={`${aspekta.className} text-4xl md:text-6xl xl:text-7xl font-light text-white`}
         >
-          Real Results,
+          Real results,
           <br />
-          Real Transfor
+          Real transfor
           <span className={`${ppeditorialul.className} text-main `}>m</span>
           ations
         </h1>
@@ -83,7 +83,7 @@ const SectionSix = () => {
           data-aos-duration="500"
           className={`${aspekta.className} text-sm md:text-base xl:text-lg font-medium text-slate-200 mt-10`}
         >
-          See How Calisthenics Changed Lives and Built Unshakable Strength
+          See how calisthenics changed lives and built unshakable strength
         </p>
       </div>
       <div className="w-4/5 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-items-center gap-4 mt-10">

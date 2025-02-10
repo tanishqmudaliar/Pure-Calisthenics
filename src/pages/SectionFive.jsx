@@ -61,7 +61,7 @@ const SectionFive = () => {
           data-aos-duration="500"
           className={`${aspekta.className} w-4/5 text-start text-3xl md:text-6xl font-light text-black`}
         >
-          Results & Changes In Calisthenics considering{" "}
+          Results & Changes in Calisthenics considering{" "}
           <span className={`${ppeditorialul.className} text-main `}>
             4 days
           </span>{" "}
