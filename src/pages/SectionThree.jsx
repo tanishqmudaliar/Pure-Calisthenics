@@ -24,17 +24,20 @@ const SectionThree = () => {
           <h1
             data-aos="fade-right"
             data-aos-duration="500"
-            className={`${aspekta.className} text-5xl md:text-6xl xl:text-7xl font-light text-white text-center`}
+            className={`${aspekta.className} text-5xl md:text-6xl xl:text-7xl font-light text-white text-start md:text-center`}
           >
-            Why our members{" "}
-            <span className={`${ppeditorialul.className} text-main`}>love</span>{" "}
+            Why our members,
+            <br />
+            <span className={`${ppeditorialul.className} text-main`}>
+              love
+            </span>{" "}
             us
           </h1>
           <p
             data-aos="fade-right"
             data-aos-duration="500"
             data-aos-delay="150"
-            className={`${aspekta.className} text-sm md:text-base xl:text-lg font-medium text-slate-200 mt-5 text-center`}
+            className={`${aspekta.className} text-sm md:text-base xl:text-lg font-medium text-slate-200 mt-5 text-start md:text-center`}
           >
             We are passionate about teaching. We have crystal clear systems &
             structure. We bring improvements from the very start.

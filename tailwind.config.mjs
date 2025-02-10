@@ -13,12 +13,12 @@ const config = {
         highlight: "1.5px 1.5px 0px black",
       },
       height: {
-        box: "90vw",
+        box: "80vw",
         swipecards: "80vw",
         circle: "34vw",
       },
       width: {
-        box: "90vw",
+        box: "80vw",
         swipecards: "80vw",
         circle: "34vw",
       },
