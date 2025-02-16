@@ -23,7 +23,7 @@ const SectionSix = () => {
       <h1
         data-aos="fade-right"
         data-aos-duration="500"
-        className={`${aspekta.className} text-5xl md:text-6xl xl:text-7xl text-center font-light text-black w-full xl:w-3/4 mb-10`}
+        className={`${aspekta.className} w-4/5 text-5xl md:text-6xl xl:text-7xl text-center font-light text-black xl:w-3/4 mb-10`}
       >
         What can{" "}
         <span className={`${ppeditorialul.className} text-main`}>we</span> do

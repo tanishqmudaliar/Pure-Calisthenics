@@ -24,7 +24,7 @@ const FloatingButton = () => {
   return (
     isVisible && (
       <div
-        className="fixed bottom-[53px] md:bottom-[53px] w-full h-full flex flex-col justify-end items-end"
+        className="fixed bottom-[53px] right-0 rounded-s-full w-fit h-fit flex flex-col justify-end items-end"
         style={{ zIndex: 19 }}
       >
         <a
