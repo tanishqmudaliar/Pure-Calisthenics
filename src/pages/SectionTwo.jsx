@@ -23,21 +23,19 @@ const SectionTwo = () => {
         <h1
           data-aos="fade-left"
           data-aos-duration="500"
-          className={`${aspekta.className} text-5xl md:text-6xl xl:text-7xl font-light text-black`}
+          className={`${aspekta.className} text-5xl md:text-6xl xl:text-7xl font-light text-black w-full xl:w-3/4`}
         >
-          Calisthenics broken down,
-          <br />J
-          <span className={`${ppeditorialul.className} text-main`}>u</span>
-          st for you
+          Unspoken benefits of Calisthe
+          <span className={`${ppeditorialul.className} text-main`}>n</span>ics
         </h1>
         <p
           data-aos="fade-left"
           data-aos-delay="150"
           data-aos-duration="500"
-          className={`${aspekta.className} text-sm md:text-base xl:text-lg font-medium text-neutral-500 mt-10 md:mt-7 xl:mt-10 w-full md:w-1/2`}
+          className={`${aspekta.className} text-lg md:text-xl font-medium text-[#666666] mt-5 md:mt-6 xl:mt-7 w-full xl:w-1/2`}
         >
-          We only teach what we are good at and that is pretty much everything
-          you'll ever need. With us you will experiece:
+          It provides just what you need. After Calisthenics, you will
+          experience:
         </p>
       </div>
       <SwipeCards />

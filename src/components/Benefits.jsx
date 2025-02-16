@@ -65,7 +65,7 @@ const Benefits = ({ title, body }) => {
       <div className="flex flex-col w-full justify-center items-center p-6 xl:p-12 border-t border-gray-400 last:border-b last:border-gray-400">
         <div className="flex w-full justify-between items-center">
           <h2
-            className={`${aspekta.className} text-black text-start text-2xl md:text-3xl xl:text-5xl font-normal`}
+            className={`${aspekta.className} text-black text-start text-3xl xl:text-5xl font-normal`}
           >
             {title}
           </h2>
@@ -81,7 +81,7 @@ const Benefits = ({ title, body }) => {
           ref={bodyRef}
           className="w-full flex-col justify-center items-center border-t border-gray-400"
         >
-          <p className={`${aspekta.className} my-4`}>{body}</p>
+          <p className={`${aspekta.className} my-4 text-xl ml-5`}>{body}</p>
         </div>
       </div>
     </ThemeProvider>

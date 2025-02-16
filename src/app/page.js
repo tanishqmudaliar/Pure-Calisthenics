@@ -1,24 +1,26 @@
 import NavBar from "@/components/NavBar";
 import SectionOne from "@/pages/SectionOne";
 import SectionTwo from "@/pages/SectionTwo";
-import SectionThree from "@/pages/SectionThree";
+import SectionThreePartOne from "@/pages/SectionThreePartOne";
+import SectionThreePartTwo from "@/pages/SectionThreePartTwo";
 import SectionFour from "@/pages/SectionFour";
 import SectionFive from "@/pages/SectionFive";
 import SectionSix from "@/pages/SectionSix";
-import SectionSeven from "@/pages/SectionSeven";
 import Footer from "@/components/Footer";
+import FloatingButton from "@/components/FloatingButton";
 
 export default function Home() {
   return (
     <main className="flex justify-center items-center flex-col overflow-x-hidden">
+      <FloatingButton />
       <NavBar />
       <SectionOne />
       <SectionTwo />
-      <SectionThree />
+      <SectionThreePartOne />
+      <SectionThreePartTwo />
       <SectionFour />
       <SectionFive />
       <SectionSix />
-      <SectionSeven />
       <Footer />
     </main>
   );

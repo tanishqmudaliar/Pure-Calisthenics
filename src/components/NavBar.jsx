@@ -21,7 +21,7 @@ const NavBar = () => {
         className="fixed w-full h-20 flex top-0 justify-center items-center bg-white border-b border-secondary"
         style={{ zIndex: 25 }}
       >
-        <div className="w-4/5 flex justify-between items-center">
+        <div className="w-[95vw] md:w-4/5 flex justify-evenly md:justify-between items-center">
           <img
             src="/logo/pure-calisthenics.png"
             className="w-44 h-auto"

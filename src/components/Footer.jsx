@@ -4,7 +4,7 @@ import { IconButton, Tooltip } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import AccountBalanceRoundedIcon from "@mui/icons-material/AccountBalanceRounded";
 import Phone from "@mui/icons-material/Phone";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
@@ -25,7 +25,7 @@ const Footer = () => {
           <Tooltip title="Facebook">
             <IconButton
               target="_blank"
-              href="https://www.facebook.com"
+              href="https://www.facebook.com/punit.pure.calisthenics/"
               className="w-fit mt-1.5"
               color="ochre"
             >
@@ -45,21 +45,21 @@ const Footer = () => {
           <Tooltip title="Youtube">
             <IconButton
               target="_blank"
-              href="https://www.youtube.com"
+              href="https://www.youtube.com/channel/UCTa4HXD-6C2j4ROP1Vq0B3g"
               className="w-fit mt-1.5"
               color="ochre"
             >
               <YouTubeIcon />
             </IconButton>
           </Tooltip>
-          <Tooltip title="Twitter">
+          <Tooltip title="LinkedIn">
             <IconButton
               target="_blank"
-              href="https://twitter.com"
+              href="https://www.linkedin.com/company/pure-calisthenics/"
               className="w-fit mt-1.5"
               color="ochre"
             >
-              <TwitterIcon />
+              <LinkedInIcon />
             </IconButton>
           </Tooltip>
           <Tooltip title="Call Us">

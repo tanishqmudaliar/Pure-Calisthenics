@@ -18,7 +18,8 @@ const SwipeCards = () => {
           effect={"cards"}
           grabCursor={true}
           modules={[EffectCards]}
-          className="w-swipecards h-swipecards xl:w-96 xl:h-96"
+          loop={true}
+          className="w-swipecards h-swipecards xl:w-96 xl:h-96 max-w-96 max-h-96"
         >
           <SwiperSlide className="grid place-items-center place-content-center rounded-full text-white bg-main">
             <div
@@ -26,7 +27,7 @@ const SwipeCards = () => {
             >
               Self Confidence
             </div>
-            <h1 className="uppercase">⟵ Swipe</h1>
+            <h1 className="uppercase">⟵ Swipe ⟶</h1>
           </SwiperSlide>
           <SwiperSlide className="grid place-items-center place-content-center rounded-full text-white bg-main">
             <div
@@ -106,7 +107,7 @@ const SwipeCards = () => {
             >
               Control Over Bodyweight
             </div>
-            <h1 className="uppercase">Swipe ⟶</h1>
+            <h1 className="uppercase">⟵ Swipe ⟶</h1>
           </SwiperSlide>
         </Swiper>
       </div>
