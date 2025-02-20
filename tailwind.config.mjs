@@ -33,8 +33,6 @@ const config = {
       },
       colors: {
         main: "#5e3ad4",
-        main1: "#5534bf",
-        main2: "#4b2eaa",
         secondary: "#1e1e1e",
       },
     },

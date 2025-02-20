@@ -11,7 +11,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const theme = createTheme({
   palette: {
-    ochre: {
+    white: {
       main: "#ffffff",
     },
   },
@@ -27,7 +27,7 @@ const Footer = () => {
               target="_blank"
               href="https://www.facebook.com/punit.pure.calisthenics/"
               className="w-fit mt-1.5"
-              color="ochre"
+              color="white"
             >
               <FacebookIcon />
             </IconButton>
@@ -37,7 +37,7 @@ const Footer = () => {
               target="_blank"
               href="https://www.instagram.com/pure__calisthenics"
               className="w-fit mt-1.5"
-              color="ochre"
+              color="white"
             >
               <InstagramIcon />
             </IconButton>
@@ -47,7 +47,7 @@ const Footer = () => {
               target="_blank"
               href="https://www.youtube.com/channel/UCTa4HXD-6C2j4ROP1Vq0B3g"
               className="w-fit mt-1.5"
-              color="ochre"
+              color="white"
             >
               <YouTubeIcon />
             </IconButton>
@@ -57,7 +57,7 @@ const Footer = () => {
               target="_blank"
               href="https://www.linkedin.com/company/pure-calisthenics/"
               className="w-fit mt-1.5"
-              color="ochre"
+              color="white"
             >
               <LinkedInIcon />
             </IconButton>
@@ -67,7 +67,7 @@ const Footer = () => {
               target="_blank"
               href="tel:+919773968119"
               className="w-fit mt-1.5"
-              color="ochre"
+              color="white"
             >
               <Phone />
             </IconButton>
@@ -77,7 +77,7 @@ const Footer = () => {
               target="_blank"
               href="https://maps.app.goo.gl/zmLdBUQ7aXXEuuae8"
               className="w-fit mt-1.5"
-              color="ochre"
+              color="white"
             >
               <AccountBalanceRoundedIcon />
             </IconButton>

@@ -38,7 +38,7 @@ const SectionThreePartTwo = () => {
           data-aos="fade-left"
           data-aos-delay="150"
           data-aos-duration="500"
-          className={`${aspekta.className} w-full md:w-1/2 text-lg md:text-xl font-medium text-[#CCCCCC] mt-10`}
+          className={`${aspekta.className} w-full md:w-1/2 text-lg md:text-xl font-medium text-white mt-6 md:mt-7 xl:mt-8`}
         >
           Step 1 : Book a call (Create a goal)
           <br />
@@ -47,7 +47,7 @@ const SectionThreePartTwo = () => {
         </p>
       </div>
       <div className="flex w-full md:w-4/5 justify-center md:justify-end my-14 md:my-10">
-        <div className="relative w-circle h-circle md:w-44 md:h-44 z-15 left-4 bg-white rounded-full flex flex-col justify-center items-center text-3xl">
+        <div className="relative w-circle max-w-44 max-h-44 h-circle md:w-44 md:h-44 z-15 left-4 bg-white rounded-full flex flex-col justify-center items-center text-3xl">
           <h1
             data-aos="fade-up"
             data-aos-delay="300"
@@ -65,7 +65,7 @@ const SectionThreePartTwo = () => {
             transformed
           </h1>
         </div>
-        <div className="w-circle h-circle md:w-44 md:h-44 z-10 bg-main rounded-full flex flex-col justify-center items-center text-3xl">
+        <div className="w-circle h-circle max-w-44 max-h-44 md:w-44 md:h-44 z-10 bg-main rounded-full flex flex-col justify-center items-center text-3xl">
           <h1
             data-aos="fade-up"
             data-aos-delay="300"
@@ -86,7 +86,7 @@ const SectionThreePartTwo = () => {
             trained
           </h1>
         </div>
-        <div className="relative w-circle h-circle md:w-44 md:h-44 -left-5 bg-white rounded-full flex flex-col justify-center items-center text-3xl">
+        <div className="relative w-circle h-circle max-w-44 max-h-44 md:w-44 md:h-44 -left-5 bg-white rounded-full flex flex-col justify-center items-center text-3xl">
           <h1
             data-aos="fade-up"
             data-aos-delay="300"

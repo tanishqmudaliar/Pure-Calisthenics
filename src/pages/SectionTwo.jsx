@@ -32,7 +32,7 @@ const SectionTwo = () => {
           data-aos="fade-left"
           data-aos-delay="150"
           data-aos-duration="500"
-          className={`${aspekta.className} text-lg md:text-xl font-medium text-[#666666] mt-5 md:mt-6 xl:mt-7 w-full xl:w-1/2`}
+          className={`${aspekta.className} text-lg md:text-xl font-medium text-[#505050] mt-6 md:mt-7 xl:mt-8 w-full xl:w-1/2`}
         >
           It provides just what you need. After Calisthenics, you will
           experience:

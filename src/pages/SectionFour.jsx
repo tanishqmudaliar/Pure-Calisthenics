@@ -68,7 +68,7 @@ const SectionFour = () => {
           data-aos="fade-right"
           data-aos-delay="150"
           data-aos-duration="500"
-          className={`${aspekta.className} text-lg md:text-xl font-medium text-[#666666] w-4/5 mt-4`}
+          className={`${aspekta.className} text-lg md:text-xl font-medium text-[#505050] w-4/5 mt-4`}
         >
           Considering 4 days a week of changes.
         </p>

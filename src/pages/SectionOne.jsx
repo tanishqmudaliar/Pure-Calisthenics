@@ -15,28 +15,28 @@ const SectionOne = () => {
   return (
     <div className="w-full h-fit min-h-svh bg-main flex flex-col justify-center items-center pt-20">
       <div className="w-full flex flex-1 flex-col justify-center items-center">
-        <div className="mx-5 flex flex-col justify-center items-center mb-5 xl:mb-7">
+        <div className="mx-5 flex flex-col justify-center items-center">
           <h1
-            className={`${aspekta.className} w-full text-start text-lg md:text-2xl xl:text-3xl font-light text-white`}
+            className={`${aspekta.className} w-full text-center text-xl md:text-2xl xl:text-3xl font-light text-white`}
           >
             We Want You To Feel
           </h1>
           <h1
-            className={`${aspekta.className} w-full text-center text-[8.5vw]/[8.5vw] md:text-5xl xl:text-7xl font-normal text-white`}
+            className={`${aspekta.className} w-full text-center text-[8.5vw]/[8.5vw] md:text-5xl xl:text-7xl font-normal text-white mb-5 xl:mb-7 mt-1`}
           >
             Strong. Light.{" "}
             <span className={ppeditorial.className}>Energetic.</span>
           </h1>
         </div>
         <h1
-          className={`${aspekta.className} mx-5 text-center text-xl md:text-2xl xl:text-3xl font-light text-white mb-5 xl:mb-7`}
+          className={`${aspekta.className} mx-5 text-center text-2xl md:text-3xl font-light text-white mb-5 xl:mb-7`}
         >
           We Do Calisthenics Personal Training
         </h1>
         <h1
-          className={`${aspekta.className} mx-5 text-center text-xl md:text-2xl xl:text-3xl font-light text-white mb-5 xl:mb-7 flex flex-col justify-center items-center`}
+          className={`${aspekta.className} mx-5 text-center text-2xl md:text-3xl font-light text-white mb-5 xl:mb-7 flex flex-col justify-center items-center`}
         >
-          Pure Calisthenics community is
+          Our Gym Environment is
           <div className="text-start text-lg xl:text-xl grid grid-cols-2 gap-x-4 text-white">
             <li>Supportive</li>
             <li>Acceptive</li>
