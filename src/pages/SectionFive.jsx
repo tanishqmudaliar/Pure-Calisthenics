@@ -19,42 +19,42 @@ const testimonials = [
     testimonial:
       "Amazing experience. It’s been 8 months here. I can see the difference in my muscle strength, core strength, physique & posture. I look well toned now and get lot of compliments. I get personal attention here. That has helped me realise my weak areas, which part of my body is stiff and requires more focus. Strength, flexibility, mobility, endurance and agility everything is being taken care of here. Over all feel very good about my body now. Looking forward to continuing calisthenics till advanced level.",
     rating: 5,
-    image: "/images/devesh.jpg",
+    image: "/assets/devesh.jpg",
   },
   {
     name: "Divya Nagaraj",
     testimonial:
       "I had approached Punit with the intention of getting fit, healing my knee injury. It’s been 4 months now since I have joined pure calisthenics. He is knowledgeable and explains you patiently what and why we are doing in such a simple manner that an absolute beginner will easily understand. He has super approachable and answers yours questions. \n \n I have seen improvements in my strength, feel more energetic and lost couple of kilos. Balli and Akshat have been amazing trainers, all the exercises are explained and demonstrated well and they too are really interested in your progression and are open to questions. \n \n Would recommend it 100%!!",
     rating: 5,
-    image: "/images/divya.jpg",
+    image: "/assets/divya.jpg",
   },
   {
     name: "Rajni Sharma",
     testimonial:
       "Highly recommended Calisthenics training. Very sincere and professional instructor. From nowhere close to headstand, I was able to see my dream coming true of doing headstand independently during my assessment only ( which was free of cost session). Thank you Punit for your genuine and excellent work and keep spreading this knowledge across India. 🤸",
     rating: 5,
-    image: "/images/rajni.jpg",
+    image: "/assets/rajni.jpg",
   },
   {
     name: "Debaleena Acharya",
     testimonial:
       "Joining the calisthenics gym has been the best decision I've made in a long time. I only wish I'd made it sooner! From day one, I've been impressed by the wealth of knowledge available and the dedication of the coaches. Punit Sir has been instrumental in understanding my goals and pushing me to achieve them. His personalized approach ensures that I get the most out of every session. Balli Sir's expertise has been invaluable in helping me grasp the importance of each exercise. The energy in the gym is contagious, vibrant making every workout enjoyable and keeping me motivated to push my limits. Highly recommended!",
     rating: 5,
-    image: "/images/pooja.jpg",
+    image: "/assets/pooja.jpg",
   },
   {
     name: "Khushali Changela",
     testimonial:
       "I’ve been training at this calisthenics gym for three months, and I’m really impressed. The space is well-equipped, and the trainers are fantastic. They take the time to teach proper techniques, provide personalized coaching, and ensure that everyone is progressing at their own pace. \n \n The coaches create a supportive and motivating environment, and there’s a real sense of community among the members. I’ve seen noticeable improvements in my strength and mobility, thanks to their expert guidance. \n \n Overall, it’s a great place to train, and I highly recommend it to anyone serious about calisthenics or just looking to get stronger!",
     rating: 5,
-    image: "/images/khushali.jpg",
+    image: "/assets/khushali.jpg",
   },
   {
     name: "Jaydeep Soni",
     testimonial:
       "The gym is pretty good and helpful. The staff is pretty amicable . Its been a week since I joined and am motivated to continue for many more years . The atmosphere is quite relaxed and the coaches are quite fun.",
     rating: 5,
-    image: "/images/jaydeep.jpg",
+    image: "/assets/jaydeep.jpg",
   },
 ];
 

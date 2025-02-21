@@ -13,9 +13,18 @@ const ppeditorial = localFont({
 
 const SectionOne = () => {
   return (
-    <div className="w-full h-fit min-h-svh bg-main flex flex-col justify-center items-center pt-20">
-      <div className="w-full flex flex-1 flex-col justify-center items-center">
-        <div className="mx-5 flex flex-col justify-center items-center">
+    <div className="w-full h-fit min-h-svh bg-main flex flex-col xl:flex-row justify-evenly items-center pt-20">
+      <video
+        autoPlay
+        loop
+        muted
+        preload="auto"
+        className="w-full h-auto object-cover xl:hidden"
+      >
+        <source src="/assets/landing.mp4" type="video/mp4" />
+      </video>
+      <div className="flex flex-1 xl:flex-none flex-col justify-center items-center my-5">
+        <div className="flex flex-col justify-center items-center">
           <h1
             className={`${aspekta.className} w-full text-center text-xl md:text-2xl xl:text-3xl font-light text-white`}
           >
@@ -69,6 +78,17 @@ const SectionOne = () => {
             </a>
           </div>
         </div>
+      </div>
+      <div className="rounded-lg shadow-[5px_5px_0px_#1e1e1e] hidden xl:flex">
+        <video
+          autoPlay
+          loop
+          muted
+          preload="auto"
+          className="w-[40vw] h-auto object-cover rounded-lg border-2 border-secondary"
+        >
+          <source src="/assets/landing.mp4" type="video/mp4" />
+        </video>
       </div>
     </div>
   );

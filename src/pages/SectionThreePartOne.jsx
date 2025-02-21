@@ -42,7 +42,7 @@ const SectionThreePartOne = () => {
               We have crystal clear systems & structure.
             </h1>
             <img
-              src="/images/img1.jpg"
+              src="/assets/img1.jpg"
               alt="image"
               className="w-box h-box md:w-[30vw] md:h-[30vw] xl:w-80 xl:h-80 object-cover "
             />
@@ -54,7 +54,7 @@ const SectionThreePartOne = () => {
               We are passionate about teaching.
             </h1>
             <img
-              src="/images/img2.jpg"
+              src="/assets/img2.jpg"
               alt="image"
               className="w-box h-box md:w-[30vw] md:h-[30vw] xl:w-80 xl:h-80 object-cover "
             />
@@ -66,7 +66,7 @@ const SectionThreePartOne = () => {
               We bring improvements from the very start.
             </h1>
             <img
-              src="/images/img3.jpg"
+              src="/assets/img3.jpg"
               alt="image"
               className="w-box h-box md:w-[30vw] md:h-[30vw] xl:w-80 xl:h-80 object-cover "
             />
