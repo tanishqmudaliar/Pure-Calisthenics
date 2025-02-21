@@ -21,7 +21,11 @@ const SectionOne = () => {
         preload="auto"
         className="w-full h-auto object-cover xl:hidden"
       >
-        <source src="/assets/landing.mp4" type="video/mp4" />
+        <source
+          // src="/assets/landing.mp4"
+          src="https://www.dropbox.com/scl/fi/h1ffv5qwhkt0lr7hpzgui/landing.mp4?rlkey=xbmuk7zphv6ipmbyaq2oh6bly&st=ac2d0nwo&raw=1"
+          type="video/mp4"
+        />
       </video>
       <div className="flex flex-1 xl:flex-none flex-col justify-center items-center my-5">
         <div className="flex flex-col justify-center items-center">
@@ -87,7 +91,11 @@ const SectionOne = () => {
           preload="auto"
           className="w-[40vw] h-auto object-cover rounded-lg border-2 border-secondary"
         >
-          <source src="/assets/landing.mp4" type="video/mp4" />
+          <source
+            // src="/assets/landing.mp4"
+            src="https://www.dropbox.com/scl/fi/h1ffv5qwhkt0lr7hpzgui/landing.mp4?rlkey=xbmuk7zphv6ipmbyaq2oh6bly&st=ac2d0nwo&raw=1"
+            type="video/mp4"
+          />
         </video>
       </div>
     </div>
