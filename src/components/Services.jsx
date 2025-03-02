@@ -15,12 +15,12 @@ const aspekta = localFont({
 const Services = () => {
   return (
     <div className="flex flex-col justify-center items-center">
-      <div
-        data-aos="zoom-in-up"
-        data-aos-duration="500"
-        className="grid grid-cols-1 md:grid-cols-3"
-      >
-        <div className="w-box md:w-[30vw] xl:w-96 flex flex-col gap-2 justify-start items-start rounded-xl p-5 bg-secondary mx-2">
+      <div className="grid grid-cols-1 md:grid-cols-3">
+        <div
+          data-aos="zoom-in-up"
+          data-aos-duration="500"
+          className="w-box md:w-[30vw] xl:w-96 flex flex-col gap-2 justify-start items-start rounded-xl p-5 bg-secondary mx-2"
+        >
           <div className="w-full h-36 rounded-xl bg-white" />
           <div className="mt-2 flex flex-col gap-2">
             <FitnessCenterIcon className="h-5 w-5 text-white" />
@@ -36,7 +36,11 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className="w-box md:w-[30vw] xl:w-96 flex flex-col gap-2 justify-start items-start rounded-xl p-5 bg-secondary mx-2 mt-5 md:mt-0">
+        <div
+          data-aos="zoom-in-up"
+          data-aos-duration="500"
+          className="w-box md:w-[30vw] xl:w-96 flex flex-col gap-2 justify-start items-start rounded-xl p-5 bg-secondary mx-2 mt-5 md:mt-0"
+        >
           <div className="w-full h-36 rounded-xl bg-white" />
           <div className="mt-2 flex flex-col gap-2">
             <PersonIcon className="h-5 w-5 text-white" />
@@ -52,7 +56,11 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className="w-box md:w-[30vw] xl:w-96 flex flex-col gap-2 justify-start items-start rounded-xl p-5 bg-secondary mx-2 mt-5 md:mt-0">
+        <div
+          data-aos="zoom-in-up"
+          data-aos-duration="500"
+          className="w-box md:w-[30vw] xl:w-96 flex flex-col gap-2 justify-start items-start rounded-xl p-5 bg-secondary mx-2 mt-5 md:mt-0"
+        >
           <div className="w-full h-36 rounded-xl bg-white" />
           <div className="mt-2 flex flex-col gap-2">
             <PhoneAndroidIcon className="h-5 w-5 text-white" />
@@ -69,12 +77,12 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div
-        data-aos="zoom-in-up"
-        data-aos-duration="500"
-        className="flex flex-col md:flex-row"
-      >
-        <div className="w-box md:w-[30vw] xl:w-96 flex flex-col gap-2 justify-start items-start rounded-xl p-5 bg-secondary mx-2 mt-5">
+      <div className="flex flex-col md:flex-row">
+        <div
+          data-aos="zoom-in-up"
+          data-aos-duration="500"
+          className="w-box md:w-[30vw] xl:w-96 flex flex-col gap-2 justify-start items-start rounded-xl p-5 bg-secondary mx-2 mt-5"
+        >
           <div className="w-full h-36 rounded-xl bg-white" />
           <div className="mt-2 flex flex-col gap-2">
             <BusinessIcon className="h-5 w-5 text-white" />
@@ -90,7 +98,11 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className="w-box md:w-[62vw] xl:w-[784px] flex flex-col gap-2 justify-start items-start rounded-xl p-5 bg-secondary mx-2 mt-5">
+        <div
+          data-aos="zoom-in-up"
+          data-aos-duration="500"
+          className="w-box md:w-[62vw] xl:w-[784px] flex flex-col gap-2 justify-start items-start rounded-xl p-5 bg-secondary mx-2 mt-5"
+        >
           <div className="w-full h-36 rounded-xl bg-white" />
           <div className="mt-2 flex flex-1 md:justify-center flex-col gap-2">
             <SchoolIcon className="h-5 w-5 text-white" />
@@ -107,12 +119,12 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div
-        data-aos="zoom-in-up"
-        data-aos-duration="500"
-        className="flex flex-col md:flex-row"
-      >
-        <div className="w-box md:w-[62vw] xl:w-[784px] flex flex-col gap-2 justify-start items-start rounded-xl p-5 bg-secondary mx-2 mt-5">
+      <div className="flex flex-col md:flex-row">
+        <div
+          data-aos="zoom-in-up"
+          data-aos-duration="500"
+          className="w-box md:w-[62vw] xl:w-[784px] flex flex-col gap-2 justify-start items-start rounded-xl p-5 bg-secondary mx-2 mt-5"
+        >
           <div className="w-full h-36 rounded-xl bg-white" />
           <div className="mt-2 flex flex-1 md:justify-center flex-col gap-2">
             <WorkIcon className="h-5 w-5 text-white" />
@@ -128,7 +140,11 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className="w-box md:w-[30vw] xl:w-96 flex flex-col gap-2 justify-start items-start rounded-xl p-5 bg-secondary mx-2 mt-5">
+        <div
+          data-aos="zoom-in-up"
+          data-aos-duration="500"
+          className="w-box md:w-[30vw] xl:w-96 flex flex-col gap-2 justify-start items-start rounded-xl p-5 bg-secondary mx-2 mt-5"
+        >
           <div className="w-full h-36 rounded-xl bg-white" />
           <div className="mt-2 flex flex-col gap-2">
             <HistoryIcon className="h-5 w-5 text-white" />
