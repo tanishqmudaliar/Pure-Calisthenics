@@ -22,7 +22,7 @@ const SectionThreePartTwo = () => {
   }, []);
 
   return (
-    <div className="w-full h-fit bg-secondary flex flex-col justify-evenly items-center pt-20 pb-10">
+    <div className="w-full h-fit bg-secondary flex flex-col justify-evenly items-center pt-10 pb-10">
       <div className="w-4/5 mx-10 md:mx-10 xl:mx-14">
         <h1
           data-aos="fade-left"

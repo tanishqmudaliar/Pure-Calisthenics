@@ -17,11 +17,13 @@ const SectionOne = () => {
       <video
         autoPlay
         loop
+        muted
+        playsInline
         preload="auto"
         className="w-full h-auto object-cover xl:hidden"
       >
         <source
-          src="https://www.dropbox.com/scl/fi/h1ffv5qwhkt0lr7hpzgui/landing.mp4?rlkey=xbmuk7zphv6ipmbyaq2oh6bly&st=ac2d0nwo&raw=1"
+          src="https://www.dropbox.com/scl/fi/h1ffv5qwhkt0lr7hpzgui/landing.mp4?rlkey=q35pytp2ayu03t6jw8ftfi799&st=5yjfhku0&raw=1"
           type="video/mp4"
         />
       </video>
@@ -85,11 +87,13 @@ const SectionOne = () => {
         <video
           autoPlay
           loop
+          muted
+          playsInline
           preload="auto"
           className="w-[40vw] h-auto object-cover rounded-lg border-2 border-secondary"
         >
           <source
-            src="https://www.dropbox.com/scl/fi/h1ffv5qwhkt0lr7hpzgui/landing.mp4?rlkey=xbmuk7zphv6ipmbyaq2oh6bly&st=ac2d0nwo&raw=1"
+            src="https://www.dropbox.com/scl/fi/h1ffv5qwhkt0lr7hpzgui/landing.mp4?rlkey=q35pytp2ayu03t6jw8ftfi799&st=5yjfhku0&raw=1"
             type="video/mp4"
           />
         </video>

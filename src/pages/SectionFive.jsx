@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import { Rating } from "@mui/material";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Image from "next/image";
 
 const aspekta = localFont({
   src: "../fonts/AspektaVF.woff2",
@@ -94,10 +95,13 @@ const SectionFive = () => {
             key={index}
             className="w-[95%] h-full rounded-lg p-4 bg-white"
           >
-            <img
+            <Image
               src={testimonial.image}
+              width={5712}
+              height={4284}
               className="w-full h-fit rounded-lg"
               alt={testimonial.name}
+              priority
             />
             <h1 className={`${aspekta.className} text-3xl mt-3`}>
               {testimonial.name}
