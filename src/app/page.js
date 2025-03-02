@@ -11,7 +11,7 @@ import FloatingButton from "@/components/FloatingButton";
 
 export default function Home() {
   return (
-    <main className="flex justify-center items-center flex-col overflow-x-hidden">
+    <main className="flex justify-center items-center flex-col overflow-x-hidden bg-secondary">
       <FloatingButton />
       <NavBar />
       <SectionOne />

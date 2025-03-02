@@ -12,14 +12,12 @@
     "@mui/icons-material": "^6.4.2",
     "@mui/material": "^6.4.2",
     "aos": "^2.3.4",
-    "clsx": "^2.1.1",
     "framer-motion": "^11.18.2",
     "gsap": "^3.12.7",
     "next": "15.1.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "swiper": "^11.2.1",
-    "tailwind-merge": "^2.6.0"
+    "swiper": "^11.2.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
