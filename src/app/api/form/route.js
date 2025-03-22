@@ -52,8 +52,7 @@ export async function POST(request) {
     };
 
     // Replace with your Google Apps Script Web App URL
-    const GOOGLE_SCRIPT_URL =
-      "https://script.google.com/macros/s/AKfycbzwbIbphAoikKdw5J877CqzxOw5CFSjYNEkOR1h9g5mZYvyqJq0vVU-QIfMGp56pch5/exec";
+    const GOOGLE_SCRIPT_URL = process.env.GOOGLE_SCRIPT_URL;
 
     // Send data to Google Sheets
     const response = await fetch(GOOGLE_SCRIPT_URL, {

@@ -9,9 +9,7 @@ export async function GET() {
   });
 
   try {
-    const feed = await parser.parseURL(
-      "https://punitkshah5.wixsite.com/mysite/blog-feed.xml"
-    );
+    const feed = await parser.parseURL(process.env.BLOGS_RSS_URL);
     const posts = feed.items.map((item) => {
       return {
         title: item.title,
