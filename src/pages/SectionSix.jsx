@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import localFont from "next/font/local";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Services from "@/components/Services";
+import Services from "@/components/services";
 
 const aspekta = localFont({
   src: "../fonts/AspektaVF.woff2",
@@ -35,6 +35,7 @@ const SectionSix = () => {
       <div>
         <Services />
       </div>
+      <div id="fill-out-form" />
     </div>
   );
 };

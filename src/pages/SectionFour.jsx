@@ -1,5 +1,5 @@
 "use client";
-import Benefits from "@/components/Benefits";
+import Benefits from "@/components/benefits";
 import localFont from "next/font/local";
 import React, { useEffect } from "react";
 import { gsap } from "gsap";

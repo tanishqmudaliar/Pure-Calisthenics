@@ -104,7 +104,7 @@ const BlogPage = () => {
                 <div className="p-5">
                   <div className="mb-3 flex">
                     <img
-                      src="/assets/punit.jpg"
+                      src="/images/punit.jpg"
                       alt="Punit Shah"
                       className="w-10 h-10 rounded-full bg-cover"
                     />

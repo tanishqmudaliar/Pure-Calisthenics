@@ -5,11 +5,16 @@ export const metadata = {
   description: "We Do Calisthenics Personal Training. (Online & Offline)",
   icons: {
     icon: [
-      { rel: "icon", url: "/favicon.png", type: "image/png", sizes: "32x32" },
-      { rel: "icon", url: "/icon-192.png", sizes: "192x192" },
-      { rel: "icon", url: "/icon-512.png", sizes: "512x512" },
+      {
+        rel: "icon",
+        url: "/logo/favicon.png",
+        type: "image/png",
+        sizes: "32x32",
+      },
+      { rel: "icon", url: "/logo/icon-192.png", sizes: "192x192" },
+      { rel: "icon", url: "/logo/icon-512.png", sizes: "512x512" },
     ],
-    apple: "/apple-icon.png",
+    apple: "/logo/apple-icon.png",
   },
 };
 

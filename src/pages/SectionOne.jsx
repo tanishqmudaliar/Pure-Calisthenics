@@ -2,6 +2,9 @@ import React from "react";
 import localFont from "next/font/local";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import Phone from "@mui/icons-material/Phone";
+import Video from "next-video";
+import thumbnail from "/public/images/thumbnail.png";
+import landing from "/videos/landing.mp4";
 
 const aspekta = localFont({
   src: "../fonts/AspektaVF.woff2",
@@ -14,19 +17,19 @@ const ppeditorial = localFont({
 const SectionOne = () => {
   return (
     <div className="w-full h-fit min-h-svh bg-main flex flex-col xl:flex-row justify-evenly items-center pt-20">
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        preload="auto"
-        className="w-full h-auto object-cover xl:hidden"
-      >
-        <source
-          src="https://www.dropbox.com/scl/fi/h1ffv5qwhkt0lr7hpzgui/landing.mp4?rlkey=q35pytp2ayu03t6jw8ftfi799&st=5yjfhku0&raw=1"
-          type="video/mp4"
+      <div className="xl:hidden">
+        <Video
+          src={landing}
+          autoPlay
+          muted
+          loop
+          playsInline
+          controls={false}
+          poster={thumbnail}
+          blurDataURL={thumbnail.blurDataURL}
+          className="w-full h-auto object-cover"
         />
-      </video>
+      </div>
       <div className="flex flex-1 xl:flex-none flex-col justify-center items-center my-5">
         <div className="flex flex-col justify-center items-center">
           <h1
@@ -63,18 +66,18 @@ const SectionOne = () => {
           Want to know more?
         </h1>
         <div className="flex justify-center items-center">
-          <div className="w-fit h-fit flex m-1 justify-center items-center rounded-lg shadow-[5px_5px_0px_#1e1e1e]">
+          <div className="w-fit h-fit flex m-1 justify-center items-center shadow-[5px_5px_0px_#1e1e1e]">
             <a
-              className="flex justify-center items-center relative bg-white w-16 h-16 rounded-lg border-2 border-secondary font-semibold text-lg text-secondary cursor-pointer hover:translate-x-[5px] hover:translate-y-[5px] transition-transform duration-300"
+              className="flex justify-center items-center relative bg-white w-16 h-16 border-2 border-secondary font-semibold text-lg text-secondary cursor-pointer hover:translate-x-[5px] hover:translate-y-[5px] transition-transform duration-300"
               target="_blank"
               href="tel:+919773968119"
             >
               <Phone />
             </a>
           </div>
-          <div className="ml-2 w-fit h-fit flex justify-center items-center rounded-lg shadow-[5px_5px_0px_#1e1e1e]">
+          <div className="ml-2 w-fit h-fit flex justify-center items-center shadow-[5px_5px_0px_#1e1e1e]">
             <a
-              className={`${aspekta.className} flex justify-center items-center relative bg-white w-44 h-16 rounded-lg border-2 border-secondary font-semibold text-lg text-secondary cursor-pointer hover:translate-x-[5px] hover:translate-y-[5px] transition-transform duration-300`}
+              className={`${aspekta.className} flex justify-center items-center relative bg-white w-44 h-16 border-2 border-secondary font-semibold text-lg text-secondary cursor-pointer hover:translate-x-[5px] hover:translate-y-[5px] transition-transform duration-300`}
               href="https://api.whatsapp.com/send?phone=9773968119"
               target="_blank"
             >
@@ -83,20 +86,18 @@ const SectionOne = () => {
           </div>
         </div>
       </div>
-      <div className="rounded-lg shadow-[5px_5px_0px_#1e1e1e] hidden xl:flex">
-        <video
+      <div className="w-[40vw] h-auto shadow-[5px_5px_0px_#1e1e1e] hidden xl:flex">
+        <Video
+          src={landing}
           autoPlay
-          loop
           muted
+          loop
           playsInline
-          preload="auto"
-          className="w-[40vw] h-auto object-cover rounded-lg border-2 border-secondary"
-        >
-          <source
-            src="https://www.dropbox.com/scl/fi/h1ffv5qwhkt0lr7hpzgui/landing.mp4?rlkey=q35pytp2ayu03t6jw8ftfi799&st=5yjfhku0&raw=1"
-            type="video/mp4"
-          />
-        </video>
+          controls={false}
+          poster={thumbnail}
+          blurDataURL={thumbnail.blurDataURL}
+          className="w-[40vw] h-auto bg-secondary object-cover border-2 border-secondary"
+        />
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
-import NavBar from "@/components/NavBar";
-import Footer from "@/components/Footer";
-import FloatingButton from "@/components/FloatingButton";
-import BlogPage from "@/components/BlogPage";
+import NavBar from "@/components/navBar";
+import Footer from "@/components/footer";
+import FloatingButton from "@/components/floatingButton";
+import BlogPage from "@/components/blogPage";
 
 export default function Home() {
   return (

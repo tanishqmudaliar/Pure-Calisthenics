@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import localFont from "next/font/local";
-import SwipeCards from "../components/SwipeCards";
+import SwipeCards from "../components/swipeCards";
 import AOS from "aos";
 import "aos/dist/aos.css";
 

@@ -44,7 +44,7 @@ const SectionThreePartOne = () => {
               </h1>
             </div>
             <img
-              src="/assets/img1.jpg"
+              src="/images/img1.jpg"
               alt="image"
               className="w-box h-box md:w-[30vw] md:h-[30vw] xl:w-80 xl:h-80 object-cover "
             />
@@ -58,7 +58,7 @@ const SectionThreePartOne = () => {
               </h1>
             </div>
             <img
-              src="/assets/img2.jpg"
+              src="/images/img2.jpg"
               alt="image"
               className="w-box h-box md:w-[30vw] md:h-[30vw] xl:w-80 xl:h-80 object-cover "
             />
@@ -72,7 +72,7 @@ const SectionThreePartOne = () => {
               </h1>
             </div>
             <img
-              src="/assets/img3.jpg"
+              src="/images/img3.jpg"
               alt="image"
               className="w-box h-box md:w-[30vw] md:h-[30vw] xl:w-80 xl:h-80 object-cover "
             />

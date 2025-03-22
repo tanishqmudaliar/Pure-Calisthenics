@@ -1,11 +1,9 @@
 "use client";
 import React from "react";
 import { IconButton, Tooltip } from "@mui/material";
-import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import AccountBalanceRoundedIcon from "@mui/icons-material/AccountBalanceRounded";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 import Phone from "@mui/icons-material/Phone";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
@@ -20,18 +18,8 @@ const theme = createTheme({
 const Footer = () => {
   return (
     <ThemeProvider theme={theme}>
-      <div className="bg-secondary w-full h-fit flex py-5 justify-center items-center">
+      <div className="bg-secondary w-3/4 h-fit flex py-5 justify-center items-center">
         <div className="w-full max-w-96 flex justify-evenly items-center">
-          <Tooltip title="Facebook">
-            <IconButton
-              target="_blank"
-              href="https://www.facebook.com/punit.pure.calisthenics/"
-              className="w-fit mt-1.5"
-              color="white"
-            >
-              <FacebookIcon />
-            </IconButton>
-          </Tooltip>
           <Tooltip title="Instagram">
             <IconButton
               target="_blank"
@@ -52,16 +40,6 @@ const Footer = () => {
               <YouTubeIcon />
             </IconButton>
           </Tooltip>
-          <Tooltip title="LinkedIn">
-            <IconButton
-              target="_blank"
-              href="https://www.linkedin.com/company/pure-calisthenics/"
-              className="w-fit mt-1.5"
-              color="white"
-            >
-              <LinkedInIcon />
-            </IconButton>
-          </Tooltip>
           <Tooltip title="Call Us">
             <IconButton
               target="_blank"
@@ -79,7 +57,7 @@ const Footer = () => {
               className="w-fit mt-1.5"
               color="white"
             >
-              <AccountBalanceRoundedIcon />
+              <LocationOnIcon />
             </IconButton>
           </Tooltip>
         </div>

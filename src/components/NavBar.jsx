@@ -1,15 +1,15 @@
 "use client";
 import React, { useState } from "react";
 import { IconButton } from "@mui/material";
-import FacebookIcon from "@mui/icons-material/Facebook";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import Phone from "@mui/icons-material/Phone";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import localFont from "next/font/local";
 import { motion, AnimatePresence } from "framer-motion";
 import { menuSlide, slide } from "./anim";
-import Curve from "./Curve";
+import Curve from "./curve";
 
 const theme = createTheme({
   palette: {
@@ -102,7 +102,7 @@ const NavBar = () => {
             >
               <div className="box-border h-full mx-12 mt-36 flex flex-col justify-start items-center">
                 <div className="flex flex-col gap-7">
-                  <div className="border-b border-white pb-1 my-5 uppercase">
+                  <div className="border-b border-white pb-1 my-5 uppercase w-[50vw]">
                     <p
                       className={`${aspekta.className} text-white font-semibold text-sm`}
                     >
@@ -178,17 +178,6 @@ const NavBar = () => {
                     </IconButton>
                     <IconButton
                       target="_blank"
-                      href="https://www.facebook.com/punit.pure.calisthenics/"
-                      color="white"
-                      className="w-[135px] h-12 rounded-lg flex justify-start"
-                    >
-                      <FacebookIcon className="mr-2" />
-                      <h1 className="text-white text-sm font-semibold">
-                        Facebook
-                      </h1>
-                    </IconButton>
-                    <IconButton
-                      target="_blank"
                       href="https://www.youtube.com/channel/UCTa4HXD-6C2j4ROP1Vq0B3g"
                       color="white"
                       className="w-[135px] h-12 rounded-lg flex justify-start"
@@ -200,13 +189,24 @@ const NavBar = () => {
                     </IconButton>
                     <IconButton
                       target="_blank"
-                      href="https://www.linkedin.com/company/pure-calisthenics/"
+                      href="tel:+919773968119"
                       color="white"
                       className="w-[135px] h-12 rounded-lg flex justify-start"
                     >
-                      <LinkedInIcon className="mr-2" />
+                      <Phone className="mr-2" />
                       <h1 className="text-white text-sm font-semibold">
-                        LinkedIn
+                        Call Us
+                      </h1>
+                    </IconButton>
+                    <IconButton
+                      target="_blank"
+                      href="https://maps.app.goo.gl/zmLdBUQ7aXXEuuae8"
+                      color="white"
+                      className="w-[135px] h-12 rounded-lg flex justify-start"
+                    >
+                      <LocationOnIcon className="mr-2" />
+                      <h1 className="text-white text-sm font-semibold">
+                        Location
                       </h1>
                     </IconButton>
                   </div>
