@@ -19,7 +19,7 @@ const SectionSix = () => {
   }, []);
 
   return (
-    <div className="w-full h-fit bg-white flex flex-col justify-center items-center py-10">
+    <div className="w-full h-fit bg-white flex flex-col justify-center items-center py-16">
       <div className="w-4/5 mb-10">
         <h1
           data-aos="fade-right"
