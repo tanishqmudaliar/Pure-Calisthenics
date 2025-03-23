@@ -35,7 +35,7 @@ const SectionSix = () => {
       <div>
         <Services />
       </div>
-      <div id="fitness-assesment" />
+      <div id="fitness-assesment-form" />
     </div>
   );
 };

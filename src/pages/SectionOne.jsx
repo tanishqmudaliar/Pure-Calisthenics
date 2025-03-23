@@ -99,7 +99,7 @@ const SectionOne = () => {
           <div className="w-fit h-fit flex md:ml-3 mt-3 md:mt-0 justify-center items-center shadow-[5px_5px_0px_#1e1e1e]">
             <a
               className={`${aspekta.className} flex justify-center items-center bg-white w-[268px] md:w-fit px-5 h-16 border-2 border-secondary cursor-pointer font-semibold text-lg text-secondary uppercase hover:translate-x-[5px] hover:translate-y-[5px] transition-transform duration-300`}
-              href="/#fitness-assesment"
+              href="/#fitness-assesment-form"
             >
               <ContentPasteIcon className="mr-5" />
               Free Fitness Assessment
