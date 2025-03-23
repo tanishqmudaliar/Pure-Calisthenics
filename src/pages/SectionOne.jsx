@@ -66,7 +66,7 @@ const SectionOne = () => {
         >
           Want to know more?
         </h1>
-        <div className="flex flex-col md:flex-row justify-center items-center">
+        <div className="flex flex-col md:flex-row justify-center items-center mb-3 md:mb-0">
           <div className="flex justify-center items-center">
             <div className="w-fit h-fit flex justify-center items-center shadow-[5px_5px_0px_#1e1e1e]">
               <a
@@ -102,7 +102,7 @@ const SectionOne = () => {
               href="/#fitness-assesment"
             >
               <ContentPasteIcon className="mr-5" />
-              Fill an fitness assesment form
+              Free Fitness Assessment
             </a>
           </div>
         </div>

@@ -31,18 +31,12 @@ const ppeditorialul = localFont({
 const SectionSeven = () => {
   // Form state management
   const [loading, setLoading] = useState(false);
-  const [snackbar, setSnackbar] = useState({
-    open: false,
-    message: "",
-    severity: "success",
-  });
 
   // Form validation state
   const [errors, setErrors] = useState({
     name: false,
     email: false,
     phone: false,
-    message: false,
   });
 
   // Form data state
@@ -86,18 +80,16 @@ const SectionSeven = () => {
     const nameError = formData.name.trim() === "";
     const emailError = !emailPattern.test(formData.email);
     const phoneError = !phonePattern.test(formData.phone);
-    const messageError = formData.message.trim() === "";
 
     // Update error states
     setErrors({
       name: nameError,
       email: emailError,
       phone: phoneError,
-      message: messageError,
     });
 
     // Return true if no errors
-    return !(nameError || emailError || phoneError || messageError);
+    return !(nameError || emailError || phoneError);
   };
 
   // Handle form submission
@@ -106,24 +98,26 @@ const SectionSeven = () => {
 
     // Validate form
     if (!validateForm()) {
-      setSnackbar({
-        open: true,
-        message: "Please fix the errors in the form",
-        severity: "error",
-      });
       return;
     }
 
     setLoading(true);
 
     try {
+      // Create payload with default message if empty
+      const submitData = {
+        ...formData,
+        message:
+          formData.message.trim() === "" ? "No Message Sent" : formData.message,
+      };
+
       // Send data to API endpoint
       const response = await fetch("/api/form", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(submitData),
       });
 
       const data = await response.json();
@@ -136,23 +130,9 @@ const SectionSeven = () => {
           phone: "",
           message: "",
         });
-
-        setSnackbar({
-          open: true,
-          message:
-            "Form submitted successfully! We'll contact you within 24 hours.",
-          severity: "success",
-        });
-      } else {
-        throw new Error(data.message || "Form submission failed");
       }
     } catch (error) {
       console.error("Error submitting form:", error);
-      setSnackbar({
-        open: true,
-        message: "Failed to submit form. Please try again later.",
-        severity: "error",
-      });
     } finally {
       setLoading(false);
     }
@@ -167,8 +147,6 @@ const SectionSeven = () => {
         return errors.email ? "Please enter a valid email address" : "";
       case "phone":
         return errors.phone ? "Please enter a valid phone number" : "";
-      case "message":
-        return errors.message ? "Message is required" : "";
       default:
         return "";
     }
@@ -283,24 +261,16 @@ const SectionSeven = () => {
             <div className="w-box md:w-[80vw] md:min-w-[620px] xl:w-[666px] h-fit bg-white border-2 border-secondary flex justify-center items-center overflow-hidden">
               <div className="w-full m-2 flex flex-col">
                 <label className="text-[#5e3ad4] text-sm font-medium mb-1">
-                  Message*
+                  Message
                 </label>
                 <textarea
-                  required
                   name="message"
                   rows={4}
-                  placeholder="Enter your message"
-                  className={`w-full border-b-2 p-2 outline-none resize-none ${
-                    errors.message ? "border-[#f44336]" : "border-[#5e3ad4]"
-                  }`}
+                  placeholder="Enter your message (optional)"
+                  className="w-full border-b-2 p-2 outline-none resize-none border-[#5e3ad4]"
                   value={formData.message}
                   onChange={handleInputChange}
                 ></textarea>
-                {errors.message && (
-                  <p className="text-[#f44336] text-xs mt-1">
-                    {getErrorText("message")}
-                  </p>
-                )}
               </div>
             </div>
           </div>
