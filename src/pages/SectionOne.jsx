@@ -1,6 +1,7 @@
 import React from "react";
 import localFont from "next/font/local";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import ContentPasteIcon from "@mui/icons-material/ContentPaste";
 import Phone from "@mui/icons-material/Phone";
 import Video from "next-video";
 import thumbnail from "/public/images/thumbnail.png";
@@ -65,23 +66,43 @@ const SectionOne = () => {
         >
           Want to know more?
         </h1>
-        <div className="flex justify-center items-center">
-          <div className="w-fit h-fit flex m-1 justify-center items-center shadow-[5px_5px_0px_#1e1e1e]">
-            <a
-              className="flex justify-center items-center relative bg-white w-16 h-16 border-2 border-secondary font-semibold text-lg text-secondary cursor-pointer hover:translate-x-[5px] hover:translate-y-[5px] transition-transform duration-300"
-              target="_blank"
-              href="tel:+919773968119"
-            >
-              <Phone />
-            </a>
+        <div className="flex flex-col md:flex-row justify-center items-center">
+          <div className="flex justify-center items-center">
+            <div className="w-fit h-fit flex justify-center items-center shadow-[5px_5px_0px_#1e1e1e]">
+              <a
+                className="flex justify-center items-center bg-white w-16 h-16 border-2 border-secondary cursor-pointer hover:translate-x-[5px] hover:translate-y-[5px] transition-transform duration-300"
+                target="_blank"
+                href="tel:+919773968119"
+              >
+                <Phone />
+              </a>
+            </div>
+            <div className="w-fit h-fit flex md:hidden ml-3 justify-center items-center shadow-[5px_5px_0px_#1e1e1e]">
+              <a
+                className={`${aspekta.className} flex justify-center items-center bg-white w-48 h-16 border-2 border-secondary cursor-pointer font-semibold text-lg text-secondary uppercase hover:translate-x-[5px] hover:translate-y-[5px] transition-transform duration-300`}
+                target="_blank"
+                href="tel:+919773968119"
+              >
+                Chat with us <WhatsAppIcon className="ml-2" />
+              </a>
+            </div>
+            <div className="w-fit h-fit hidden md:flex ml-3 justify-center items-center shadow-[5px_5px_0px_#1e1e1e]">
+              <a
+                className="flex justify-center items-center bg-white w-16 h-16 border-2 border-secondary cursor-pointer hover:translate-x-[5px] hover:translate-y-[5px] transition-transform duration-300"
+                target="_blank"
+                href="https://api.whatsapp.com/send?phone=9773968119"
+              >
+                <WhatsAppIcon />
+              </a>
+            </div>
           </div>
-          <div className="ml-2 w-fit h-fit flex justify-center items-center shadow-[5px_5px_0px_#1e1e1e]">
+          <div className="w-fit h-fit flex md:ml-3 mt-3 md:mt-0 justify-center items-center shadow-[5px_5px_0px_#1e1e1e]">
             <a
-              className={`${aspekta.className} flex justify-center items-center relative bg-white w-44 h-16 border-2 border-secondary font-semibold text-lg text-secondary cursor-pointer hover:translate-x-[5px] hover:translate-y-[5px] transition-transform duration-300`}
-              href="https://api.whatsapp.com/send?phone=9773968119"
-              target="_blank"
+              className={`${aspekta.className} flex justify-center items-center bg-white w-[268px] md:w-fit px-5 h-16 border-2 border-secondary cursor-pointer font-semibold text-lg text-secondary uppercase hover:translate-x-[5px] hover:translate-y-[5px] transition-transform duration-300`}
+              href="/#fitness-assesment"
             >
-              Chat with us <WhatsAppIcon className="ml-2" />
+              <ContentPasteIcon className="mr-5" />
+              Fill an fitness assesment form
             </a>
           </div>
         </div>

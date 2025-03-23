@@ -38,7 +38,7 @@ const SectionThreePartOne = () => {
           <div data-aos="fade-up" data-aos-duration="500">
             <div className="w-box md:w-[30vw] xl:w-80 my-2 flex justify-center items-center">
               <h1
-                className={`${aspekta.className} flex h-20 w-4/5 md:w-full xl:w-4/5 justify-center items-center text-lg font-medium text-white text-start md:text-center xl:text-start`}
+                className={`${aspekta.className} flex h-20 w-full md:w-4/5 justify-start md:justify-center items-center text-lg font-medium text-white text-start md:text-center`}
               >
                 We have crystal clear systems & structure.
               </h1>
@@ -52,7 +52,7 @@ const SectionThreePartOne = () => {
           <div data-aos="fade-up" data-aos-duration="500">
             <div className="w-box md:w-[30vw] xl:w-80 my-2 flex justify-center items-center">
               <h1
-                className={`${aspekta.className} flex h-20 w-4/5 md:w-full justify-center items-center text-lg font-medium text-white text-start md:text-center`}
+                className={`${aspekta.className} flex h-20 w-full md:w-4/5 justify-start md:justify-center items-center text-lg font-medium text-white text-start md:text-center`}
               >
                 We are passionate about teaching.
               </h1>
@@ -66,7 +66,7 @@ const SectionThreePartOne = () => {
           <div data-aos="fade-up" data-aos-duration="500">
             <div className="w-box md:w-[30vw] xl:w-80 my-2 flex justify-center items-center">
               <h1
-                className={`${aspekta.className} flex h-20 w-4/5 md:w-full xl:w-4/5 justify-center items-center text-lg font-medium text-white text-start md:text-end`}
+                className={`${aspekta.className} flex h-20 w-full md:w-4/5 justify-start md:justify-center items-center text-lg font-medium text-white text-start md:text-center`}
               >
                 We bring improvements from the very start.
               </h1>
