@@ -70,7 +70,7 @@ const SectionFour = () => {
           data-aos-duration="500"
           className={`${aspekta.className} text-lg md:text-xl font-medium text-[#505050] w-4/5 mt-4`}
         >
-          Considering 4 days a week of changes.
+          Considering 4 days a week of training.
         </p>
       </div>
       <div className="w-4/5 mb-20 flex flex-col justify-center items-center">

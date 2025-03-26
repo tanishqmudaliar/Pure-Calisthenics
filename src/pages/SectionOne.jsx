@@ -46,11 +46,6 @@ const SectionOne = () => {
           </h1>
         </div>
         <h1
-          className={`${aspekta.className} mx-5 text-center text-2xl md:text-3xl font-light text-white mb-5 xl:mb-7`}
-        >
-          We Do Calisthenics Personal Training
-        </h1>
-        <h1
           className={`${aspekta.className} mx-5 text-center text-2xl md:text-3xl font-light text-white mb-5 xl:mb-7 flex flex-col justify-center items-center`}
         >
           Our Gym Environment is
