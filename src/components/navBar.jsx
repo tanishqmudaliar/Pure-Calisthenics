@@ -35,7 +35,7 @@ const NavBar = () => {
       >
         <div className="w-[95vw] md:w-4/5 flex justify-evenly md:justify-between items-center">
           <img
-            src="/logo/pure-calisthenics.png"
+            src="/logo/pure calisthenics black.png"
             className="w-44 h-auto"
             alt="Pure Calisthenics"
           />

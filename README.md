@@ -1,36 +1,146 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<img src="public/logo/pure calisthenics white.png" alt="Pure Calisthenics" width="500">
+
+A modern website built with Next.js for a calisthenics gym, helping potential customers learn about the gym and connect with the owner.
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Technology Stack](#technology-stack)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Project Structure](#project-structure)
+- [Running the Application](#running-the-application)
+- [Deployment](#deployment)
+- [Development Notes](#development-notes)
+
+## Overview
+
+Pure Calisthenics is a website designed to showcase a physical calisthenics gym. The site provides information about the gym, its facilities, and ways for potential customers to contact the owner. It also features a blog section that pulls content from the owner's Wix RSS feed.
+
+## Features
+
+- **Informative Landing Page**: Showcases the gym's facilities and offerings
+- **Hero Video**: Autoplay muted video on the landing page using Mux for streaming
+- **Contact Integration**: Direct call and WhatsApp buttons to easily reach the gym owner
+- **Inquiry Form**: A form for potential clients to express interest and request information
+- **Blog Section**: Displays the gym owner's blog posts pulled from Wix via RSS feed
+- **Responsive Design**: Optimized for both desktop and mobile viewing
+- **Modern UI**: Animated and visually appealing interface using various animation libraries
+
+## Technology Stack
+
+- [Next.js](https://nextjs.org/) (v15.1.4) - React framework for server-side rendering
+- [React](https://reactjs.org/) (v19.0.0) - JavaScript library for building user interfaces
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [Material UI](https://mui.com/) - React component library
+- [Framer Motion](https://www.framer.com/motion/) - Animation library
+- [GSAP](https://greensock.com/gsap/) - Professional animation library
+- [AOS](https://michalsnik.github.io/aos/) - Animate On Scroll library
+- [Swiper](https://swiperjs.com/) - Modern mobile touch slider
+- [Mux](https://mux.com/) - Video streaming via next-video integration
+- [RSS Parser](https://github.com/rbren/rss-parser) - For fetching blog content
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js (v18.0.0 or later recommended)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/purecalisthenics.git
+   cd purecalisthenics
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+## Project Structure
+
+The project follows the standard Next.js project structure:
+
+```
+purecalisthenics/
+├── app/              # Next.js app router files
+│   ├── blogs/        # Blog page
+│   └── page.js       # Home page
+├── components/       # Reusable React components
+├── public/           # Static assets like images
+├── videos/           # Video assets for streaming via Mux
+├── styles/           # CSS styles
+├── package.json      # Project dependencies
+├── next.config.js    # Next.js configuration
+└── tailwind.config.js # Tailwind CSS configuration
+```
+
+## Running the Application
+
+For development:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application will be available at [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+For production build:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+# or
+yarn build
+yarn start
+```
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+This Next.js application can be deployed on various platforms:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Vercel](https://vercel.com/) (recommended for Next.js apps)
+- [Netlify](https://www.netlify.com/)
+- Any hosting platform that supports Node.js applications
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+For Vercel deployment:
 
-## Deploy on Vercel
+1. Push your code to a GitHub repository
+2. Import the project in Vercel
+3. Deploy
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Development Notes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Video Streaming
+
+The landing page features an autoplay muted video using Mux video streaming, implemented with the `next-video` package. This provides efficient video delivery with automatic optimization for different devices and bandwidths.
+
+### RSS Feed Integration
+
+The blog section uses `rss-parser` to fetch and display the gym owner's blog posts from their Wix site. The integration is set up in the blogs page component.
+
+### Animations
+
+The site uses multiple animation libraries to create an engaging experience:
+
+- GSAP for complex animations
+- Framer Motion for component transitions
+- AOS for scroll-based animations
+
+### Contact Functionality
+
+The site includes direct contact links:
+
+- Click-to-call buttons
+- WhatsApp integration for instant messaging
+- Inquiry form for lead generation
