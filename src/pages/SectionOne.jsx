@@ -4,8 +4,8 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import ContentPasteIcon from "@mui/icons-material/ContentPaste";
 import Phone from "@mui/icons-material/Phone";
 import Video from "next-video";
-import thumbnail from "/public/images/thumbnail.png";
-import landing from "/videos/landing.mp4";
+import thumbnail from "../../public/images/thumbnail.png";
+import landing from "../../videos/landing.mp4";
 
 const aspekta = localFont({
   src: "../fonts/AspektaVF.woff2",
