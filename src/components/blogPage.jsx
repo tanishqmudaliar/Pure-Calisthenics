@@ -13,32 +13,34 @@ const ppeditorialul = localFont({
   src: "../fonts/ppeditorialold-ultralightitalic.otf",
 });
 
-const BlogPage = () => {
-  const [posts, setPosts] = useState([]);
-  const [loading, setLoading] = useState(true);
+const BlogPage = ({ initialPosts = [] }) => {
+  const [posts, setPosts] = useState(initialPosts);
+  const [loading, setLoading] = useState(initialPosts.length === 0);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const fetchBlogs = async () => {
-      try {
-        const response = await fetch("/api/blogs");
-
-        if (!response.ok) {
-          throw new Error("Failed to fetch blogs");
-        }
-
-        const data = await response.json();
-        setPosts(data);
-        setLoading(false);
-      } catch (error) {
-        setError(error.message);
-        setLoading(false);
-      }
-    };
-
-    fetchBlogs();
     AOS.init();
-  }, []);
+    if (initialPosts.length === 0) {
+      const fetchBlogs = async () => {
+        try {
+          const response = await fetch("/api/blogs");
+
+          if (!response.ok) {
+            throw new Error("Failed to fetch blogs");
+          }
+
+          const data = await response.json();
+          setPosts(data);
+          setLoading(false);
+        } catch (err) {
+          setError(err.message);
+          setLoading(false);
+        }
+      };
+
+      fetchBlogs();
+    }
+  }, [initialPosts]);
 
   // Define breakpoints for the masonry layout
   const breakpointColumnsObj = {
@@ -67,7 +69,7 @@ const BlogPage = () => {
 
   return (
     <div className="w-screen bg-white">
-      <div
+      <h1
         data-aos="fade-left"
         data-aos-duration="500"
         className={`${aspekta.className} text-5xl md:text-6xl xl:text-7xl text-start md:text-center pt-20 mt-10 mx-5`}
@@ -75,7 +77,7 @@ const BlogPage = () => {
         India's{" "}
         <span className={`${ppeditorialul.className} text-main`}>1st</span>{" "}
         Calisthenics Blog Page
-      </div>
+      </h1>
       {posts.length === 0 ? (
         <div
           className={`${aspekta.className} w-screen min-h-screen bg-white flex justify-center items-center text-5xl md:text-6xl xl:text-7xl font-normal`}
@@ -98,24 +100,26 @@ const BlogPage = () => {
               >
                 <img
                   src={post.thumbnail}
-                  alt="Thumbnail"
+                  alt={post.title ? `${post.title} blog thumbnail` : "Pure Calisthenics blog post"}
+                  loading="lazy"
                   className="w-full h-auto"
                 />
                 <div className="p-5">
                   <div className="mb-3 flex">
                     <img
-                      src="/images/punit.jpg"
-                      alt="Punit Shah"
+                      src="/images/punit.webp"
+                      alt="Punit Shah - Head Coach"
+                      loading="lazy"
                       className="w-10 h-10 rounded-full bg-cover"
                     />
                     <div className="ml-2">
-                      <h1 className="text-sm">Punit Shah</h1>
+                      <p className="text-sm font-semibold">Punit Shah</p>
                       <p className="text-sm">{post.date}</p>
                     </div>
                   </div>
-                  <h1 className={`${aspekta.className} text-2xl font-bold`}>
+                  <h2 className={`${aspekta.className} text-2xl font-bold`}>
                     {post.title}
-                  </h1>
+                  </h2>
                   <p className={`${aspekta.className} text-base mt-3`}>
                     {post.desc}{" "}
                     <a
