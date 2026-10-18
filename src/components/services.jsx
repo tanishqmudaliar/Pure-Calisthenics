@@ -27,8 +27,9 @@ const Services = () => {
           className="w-box md:w-[30vw] xl:w-96 flex flex-col gap-2 justify-start items-start rounded-xl p-5 bg-secondary mx-2"
         >
           <img
-            src="/images/KFBG.jpg"
+            src="/images/KFBG.webp"
             alt="Kids Fitness Group Batch"
+            loading="lazy"
             className="w-full h-auto md:h-52 rounded-xl object-cover"
           />
           <div className="mt-2 flex flex-col gap-2">
@@ -51,8 +52,9 @@ const Services = () => {
           className="w-box md:w-[30vw] xl:w-96 flex flex-col gap-2 justify-start items-start rounded-xl p-5 bg-secondary mx-2 mt-5 md:mt-0"
         >
           <img
-            src="/images/OOPT.jpg"
+            src="/images/OOPT.webp"
             alt="One to One Personal Training"
+            loading="lazy"
             className="w-full h-auto md:h-52 rounded-xl object-cover"
           />
           <div className="mt-2 flex flex-col gap-2">
@@ -75,8 +77,9 @@ const Services = () => {
           className="w-box md:w-[30vw] xl:w-96 flex flex-col gap-2 justify-start items-start rounded-xl p-5 bg-secondary mx-2 mt-5 md:mt-0"
         >
           <img
-            src="/images/OPT.jpg"
+            src="/images/OPT.webp"
             alt="Online Personal Training"
+            loading="lazy"
             className="w-full h-auto md:h-52 rounded-xl object-cover"
           />
           <div className="mt-2 flex flex-col gap-2">
@@ -101,8 +104,9 @@ const Services = () => {
           className="w-box md:w-[30vw] xl:w-96 flex flex-col gap-2 justify-start items-start rounded-xl p-5 bg-secondary mx-2 mt-5"
         >
           <img
-            src="/images/CWFS.jpg"
+            src="/images/CWFS.webp"
             alt="Corporate Workshops & Fitness Sessions"
+            loading="lazy"
             className="w-full h-auto md:h-52 rounded-xl object-cover"
           />
           <div className="mt-2 flex flex-col gap-2">
@@ -125,8 +129,9 @@ const Services = () => {
           className="w-box md:w-[62vw] xl:w-[784px] flex flex-col gap-2 justify-start items-start rounded-xl p-5 bg-secondary mx-2 mt-5"
         >
           <img
-            src="/images/ES1.jpg"
+            src="/images/ES1.webp"
             alt="Educational Seminar: Effects of Different Fitness Forms"
+            loading="lazy"
             className="w-full h-auto md:h-52 rounded-xl object-cover"
           />
           <div className="mt-2 flex flex-col gap-2">
@@ -151,8 +156,9 @@ const Services = () => {
           className="w-box md:w-[62vw] xl:w-[784px] flex flex-col gap-2 justify-start items-start rounded-xl p-5 bg-secondary mx-2 mt-5"
         >
           <img
-            src="/images/ES2.jpg"
+            src="/images/ES2.webp"
             alt="Educational Seminar: Calisthenics as a Full-Time Profession"
+            loading="lazy"
             className="w-full h-auto md:h-52 rounded-xl object-cover"
           />
           <div className="mt-2 flex flex-col gap-2">
@@ -175,8 +181,9 @@ const Services = () => {
           className="w-box md:w-[30vw] xl:w-96 flex flex-col gap-2 justify-start items-start rounded-xl p-5 bg-secondary mx-2 mt-5"
         >
           <img
-            src="/images/ES3.jpg"
+            src="/images/ES3.webp"
             alt="Educational Seminar: Introduction to Calisthenics"
+            loading="lazy"
             className="w-full h-auto md:h-52 rounded-xl object-cover"
           />
           <div className="mt-2 flex flex-col gap-2">
