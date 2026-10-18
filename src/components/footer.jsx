@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import { IconButton, Tooltip } from "@mui/material";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
@@ -18,7 +19,7 @@ const theme = createTheme({
 const Footer = () => {
   return (
     <ThemeProvider theme={theme}>
-      <div className="bg-secondary w-3/4 h-fit flex py-5 justify-center items-center">
+      <footer className="bg-secondary w-3/4 h-fit flex flex-col py-5 justify-center items-center">
         <div className="w-full max-w-96 flex justify-evenly items-center">
           <Tooltip title="Instagram">
             <IconButton
@@ -61,7 +62,15 @@ const Footer = () => {
             </IconButton>
           </Tooltip>
         </div>
-      </div>
+        <div className="mt-2 text-center">
+          <Link
+            href="/privacy-policy"
+            className="text-[11px] text-white/50 hover:text-white transition-colors"
+          >
+            Privacy Policy
+          </Link>
+        </div>
+      </footer>
     </ThemeProvider>
   );
 };
