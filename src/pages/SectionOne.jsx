@@ -49,7 +49,7 @@ const SectionOne = () => {
           className={`${aspekta.className} mx-5 text-center text-2xl md:text-3xl font-light text-white mb-5 xl:mb-7 flex flex-col justify-center items-center`}
         >
           Our Gym Environment is
-          <ul className="w-fit text-start text-lg xl:text-xl grid grid-cols-2 gap-x-8 text-white list-disc list-inside mt-2">
+          <ul className="w-fit text-start text-lg xl:text-xl grid grid-cols-2 gap-x-4 ml-4 text-white list-disc list-inside mt-2">
             <li>Supportive</li>
             <li>Acceptive</li>
             <li>Encouraging</li>
