@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import localFont from "next/font/local";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { CircularProgress } from "@mui/material";
+import { CircularProgress, Snackbar, Alert } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const theme = createTheme({
@@ -31,6 +31,13 @@ const ppeditorialul = localFont({
 const SectionSeven = () => {
   // Form state management
   const [loading, setLoading] = useState(false);
+
+  // Snackbar state management
+  const [snackbar, setSnackbar] = useState({
+    open: false,
+    message: "",
+    severity: "success",
+  });
 
   // Form validation state
   const [errors, setErrors] = useState({
@@ -130,9 +137,29 @@ const SectionSeven = () => {
           phone: "",
           message: "",
         });
+        setSnackbar({
+          open: true,
+          message:
+            "Form submitted successfully! Our consultation team will reach out within 24 hours.",
+          severity: "success",
+        });
+      } else {
+        setSnackbar({
+          open: true,
+          message:
+            data.message ||
+            "Failed to submit form. Please try again or message us on WhatsApp.",
+          severity: "error",
+        });
       }
     } catch (error) {
       console.error("Error submitting form:", error);
+      setSnackbar({
+        open: true,
+        message:
+          "Network error occurred. Please try again or message us on WhatsApp.",
+        severity: "error",
+      });
     } finally {
       setLoading(false);
     }
@@ -156,7 +183,7 @@ const SectionSeven = () => {
     <ThemeProvider theme={theme}>
       <div className="w-full bg-main py-20 flex justify-center items-center flex-col xl:flex-row">
         <div className="w-fit mx-10 md:w-[80vw] xl:w-[50vw] xl:ml-28 flex flex-col justify-center items-start">
-          <h1
+          <h2
             data-aos="fade-left"
             data-aos-duration="500"
             className={`${aspekta.className} text-5xl md:text-6xl xl:text-7xl font-light text-white`}
@@ -167,7 +194,7 @@ const SectionSeven = () => {
               &
             </span>{" "}
             let's talk
-          </h1>
+          </h2>
           <p
             data-aos="fade-left"
             data-aos-delay="150"
@@ -284,6 +311,23 @@ const SectionSeven = () => {
             </button>
           </div>
         </form>
+
+        {/* 7-Second Feedback Notification */}
+        <Snackbar
+          open={snackbar.open}
+          autoHideDuration={7000}
+          onClose={() => setSnackbar((prev) => ({ ...prev, open: false }))}
+          anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+        >
+          <Alert
+            onClose={() => setSnackbar((prev) => ({ ...prev, open: false }))}
+            severity={snackbar.severity}
+            variant="filled"
+            sx={{ width: "100%", fontSize: "0.95rem" }}
+          >
+            {snackbar.message}
+          </Alert>
+        </Snackbar>
       </div>
     </ThemeProvider>
   );
