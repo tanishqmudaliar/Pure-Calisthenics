@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
 import { IconButton } from "@mui/material";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import Phone from "@mui/icons-material/Phone";
@@ -34,30 +35,32 @@ const NavBar = () => {
         style={{ zIndex: 25 }}
       >
         <div className="w-[95vw] md:w-4/5 flex justify-evenly md:justify-between items-center">
-          <img
-            src="/logo/pure calisthenics black.png"
-            className="w-44 h-auto"
-            alt="Pure Calisthenics"
-          />
+          <Link href="/">
+            <img
+              src="/logo/pure calisthenics black.png"
+              className="w-44 h-auto cursor-pointer"
+              alt="Pure Calisthenics"
+            />
+          </Link>
           <div className="hidden xl:flex justify-between items-center w-2/5">
-            <a
+            <Link
               href="/"
               className={`${aspekta.className} text-lg cursor-pointer`}
             >
               Home
-            </a>
-            <a
+            </Link>
+            <Link
               href="/#services-section"
               className={`${aspekta.className} text-lg cursor-pointer`}
             >
               Services
-            </a>
-            <a
+            </Link>
+            <Link
               href="/blogs"
               className={`${aspekta.className} text-lg cursor-pointer`}
             >
               Blogs
-            </a>
+            </Link>
             <a
               className={`${aspekta.className} bg-main bg-opacity-30 w-fit h-fit py-2 px-6 text-lg rounded-full font-semibold text-main cursor-pointer border-2 border-main hover:bg-opacity-100 hover:text-white transition-all duration-200`}
               href="https://api.whatsapp.com/send?phone=9773968119"
@@ -67,11 +70,11 @@ const NavBar = () => {
             </a>
           </div>
           <div className="flex xl:hidden justify-center items-center">
-            <h1
+            <span
               className={`${aspekta.className} relative text-xl text-secondary`}
             >
               {isActive ? "CLOSE" : "MENU"}
-            </h1>
+            </span>
             <div
               onClick={() => {
                 setIsActive(!isActive);
@@ -118,13 +121,13 @@ const NavBar = () => {
                     animate="enter"
                     exit="exit"
                   >
-                    <a
+                    <Link
                       href="/"
                       onClick={() => setIsActive(false)}
                       className={`${aspekta.className} text-white font-light text-5xl flex`}
                     >
                       Home
-                    </a>
+                    </Link>
                   </motion.div>
 
                   {/* Services Item */}
@@ -135,13 +138,13 @@ const NavBar = () => {
                     animate="enter"
                     exit="exit"
                   >
-                    <a
+                    <Link
                       href="/#services-section"
                       onClick={() => setIsActive(false)}
                       className={`${aspekta.className} text-white font-light text-5xl flex`}
                     >
                       Services
-                    </a>
+                    </Link>
                   </motion.div>
 
                   {/* Blogs Item */}
@@ -152,13 +155,13 @@ const NavBar = () => {
                     animate="enter"
                     exit="exit"
                   >
-                    <a
+                    <Link
                       href="/blogs"
                       onClick={() => setIsActive(false)}
                       className={`${aspekta.className} text-white font-light text-5xl flex`}
                     >
                       Blogs
-                    </a>
+                    </Link>
                   </motion.div>
 
                   {/* Social Icons */}
@@ -172,9 +175,9 @@ const NavBar = () => {
                       className="w-[135px] h-12 rounded-lg flex justify-start"
                     >
                       <InstagramIcon className="mr-2" />
-                      <h1 className="text-white text-sm font-semibold">
+                      <span className="text-white text-sm font-semibold">
                         Instagram
-                      </h1>
+                      </span>
                     </IconButton>
                     <IconButton
                       target="_blank"
@@ -183,9 +186,9 @@ const NavBar = () => {
                       className="w-[135px] h-12 rounded-lg flex justify-start"
                     >
                       <YouTubeIcon className="mr-2" />
-                      <h1 className="text-white text-sm font-semibold">
+                      <span className="text-white text-sm font-semibold">
                         Youtube
-                      </h1>
+                      </span>
                     </IconButton>
                     <IconButton
                       target="_blank"
@@ -194,9 +197,9 @@ const NavBar = () => {
                       className="w-[135px] h-12 rounded-lg flex justify-start"
                     >
                       <Phone className="mr-2" />
-                      <h1 className="text-white text-sm font-semibold">
+                      <span className="text-white text-sm font-semibold">
                         Call Us
-                      </h1>
+                      </span>
                     </IconButton>
                     <IconButton
                       target="_blank"
@@ -205,9 +208,9 @@ const NavBar = () => {
                       className="w-[135px] h-12 rounded-lg flex justify-start"
                     >
                       <LocationOnIcon className="mr-2" />
-                      <h1 className="text-white text-sm font-semibold">
+                      <span className="text-white text-sm font-semibold">
                         Location
-                      </h1>
+                      </span>
                     </IconButton>
                   </div>
                 </div>

@@ -24,7 +24,7 @@ const SectionThreePartTwo = () => {
   return (
     <div className="w-full h-fit bg-secondary flex flex-col justify-evenly items-center pt-10 pb-10">
       <div className="w-4/5 mx-10 md:mx-10 xl:mx-14">
-        <h1
+        <h2
           data-aos="fade-left"
           data-aos-duration="500"
           className={`${aspekta.className} text-5xl md:text-6xl xl:text-7xl font-light text-white`}
@@ -33,7 +33,7 @@ const SectionThreePartTwo = () => {
           <br />
           Si
           <span className={`${ppeditorialul.className} text-main `}>m</span>ple
-        </h1>
+        </h2>
         <p
           data-aos="fade-left"
           data-aos-delay="150"
@@ -48,33 +48,33 @@ const SectionThreePartTwo = () => {
       </div>
       <div className="flex w-full md:w-4/5 justify-center md:justify-end my-14 md:my-10">
         <div className="relative w-circle max-w-44 max-h-44 h-circle md:w-44 md:h-44 z-15 left-4 bg-white rounded-full flex flex-col justify-center items-center text-3xl">
-          <h1
+          <p
             data-aos="fade-up"
             data-aos-delay="300"
             data-aos-duration="500"
             className={`${ppeditorial.className} font-medium text-4xl md:text-5xl md:mt-0`}
           >
             100+
-          </h1>
-          <h1
+          </p>
+          <p
             data-aos="fade-up"
             data-aos-delay="450"
             data-aos-duration="500"
             className={`${aspekta.className} text-xs text-center font-medium uppercase`}
           >
             transformed
-          </h1>
+          </p>
         </div>
         <div className="w-circle h-circle max-w-44 max-h-44 md:w-44 md:h-44 z-10 bg-main rounded-full flex flex-col justify-center items-center text-3xl">
-          <h1
+          <p
             data-aos="fade-up"
             data-aos-delay="300"
             data-aos-duration="500"
             className={`${ppeditorial.className} ml-3 md:ml-0 font-medium text-4xl md:text-5xl mt-3 md:mt-0`}
           >
             700+
-          </h1>
-          <h1
+          </p>
+          <p
             data-aos="fade-up"
             data-aos-delay="450"
             data-aos-duration="500"
@@ -84,18 +84,18 @@ const SectionThreePartTwo = () => {
             <span> </span>
             <br className="md:hidden" />
             trained
-          </h1>
+          </p>
         </div>
         <div className="relative w-circle h-circle max-w-44 max-h-44 md:w-44 md:h-44 -left-5 bg-white rounded-full flex flex-col justify-center items-center text-3xl">
-          <h1
+          <p
             data-aos="fade-up"
             data-aos-delay="300"
             data-aos-duration="500"
             className={`${ppeditorial.className} font-medium text-4xl md:text-5xl mt-3 md:mt-0`}
           >
             4+
-          </h1>
-          <h1
+          </p>
+          <p
             data-aos="fade-up"
             data-aos-delay="450"
             data-aos-duration="500"
@@ -105,46 +105,49 @@ const SectionThreePartTwo = () => {
             <span> </span>
             <br className="md:hidden" />
             experience
-          </h1>
+          </p>
         </div>
       </div>
       <div className="w-screen h-fit bg-white inline-flex flex-nowrap py-1">
         <ul className="flex items-center justify-center md:justify-start [&_li]:mx-7 [&_img]:max-w-none animate-infinite-scroll">
           <li>
             <img
-              src="/logo/pure-calisthenics.png"
+              src="/logo/pure calisthenics black.png"
               className="w-28 h-auto"
               alt="Pure Calisthenics"
+              loading="lazy"
             />
           </li>
           <li>
-            <h1 className={`${aspekta.className} font-medium text-base w-80`}>
+            <p className={`${aspekta.className} font-medium text-base w-80`}>
               I love it here, it's my happy place ~ Aleena
-            </h1>
+            </p>
           </li>
           <li>
             <img
-              src="/logo/pure-calisthenics.png"
+              src="/logo/pure calisthenics black.png"
               className="w-28 h-auto"
               alt="Pure Calisthenics"
+              loading="lazy"
             />
           </li>
           <li>
-            <h1 className={`${aspekta.className} font-medium text-base w-64`}>
+            <p className={`${aspekta.className} font-medium text-base w-64`}>
               It's so inclusive and uplifting ~ Pari
-            </h1>
+            </p>
           </li>
           <li>
             <img
-              src="/logo/pure-calisthenics.png"
+              src="/logo/pure calisthenics black.png"
               className="w-28 h-auto"
               alt="Pure Calisthenics"
+              loading="lazy"
             />
           </li>
           <li>
-            <h1 className={`${aspekta.className} font-medium text-base w-80`}>
+            <p className={`${aspekta.className} font-medium text-base w-80`}>
               This gym is a part of my routine now ~ Anish
-            </h1>
+            </p>
           </li>
         </ul>
         <ul
@@ -153,39 +156,42 @@ const SectionThreePartTwo = () => {
         >
           <li>
             <img
-              src="/logo/pure-calisthenics.png"
+              src="/logo/pure calisthenics black.png"
               className="w-28 h-auto"
               alt="Pure Calisthenics"
+              loading="lazy"
             />
           </li>
           <li>
-            <h1 className={`${aspekta.className} font-medium text-base w-80`}>
+            <p className={`${aspekta.className} font-medium text-base w-80`}>
               I love it here, it's my happy place ~ Aleena
-            </h1>
+            </p>
           </li>
           <li>
             <img
-              src="/logo/pure-calisthenics.png"
+              src="/logo/pure calisthenics black.png"
               className="w-28 h-auto"
               alt="Pure Calisthenics"
+              loading="lazy"
             />
           </li>
           <li>
-            <h1 className={`${aspekta.className} font-medium text-base w-64`}>
+            <p className={`${aspekta.className} font-medium text-base w-64`}>
               It's so inclusive and uplifting ~ Pari
-            </h1>
+            </p>
           </li>
           <li>
             <img
-              src="/logo/pure-calisthenics.png"
+              src="/logo/pure calisthenics black.png"
               className="w-28 h-auto"
               alt="Pure Calisthenics"
+              loading="lazy"
             />
           </li>
           <li>
-            <h1 className={`${aspekta.className} font-medium text-base w-80`}>
+            <p className={`${aspekta.className} font-medium text-base w-80`}>
               This gym is a part of my routine now ~ Anish
-            </h1>
+            </p>
           </li>
         </ul>
       </div>

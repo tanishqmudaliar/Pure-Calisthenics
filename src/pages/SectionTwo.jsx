@@ -20,14 +20,14 @@ const SectionTwo = () => {
   return (
     <div className="w-full h-fit bg-white flex flex-col justify-start items-center pt-20">
       <div className="w-4/5 mx-10 md:mx-24 xl:mx-28">
-        <h1
+        <h2
           data-aos="fade-left"
           data-aos-duration="500"
           className={`${aspekta.className} text-5xl md:text-6xl xl:text-7xl font-light text-black w-full xl:w-3/4`}
         >
           Unspoken benefits of Calisthe
           <span className={`${ppeditorialul.className} text-main`}>n</span>ics
-        </h1>
+        </h2>
         <p
           data-aos="fade-left"
           data-aos-delay="150"

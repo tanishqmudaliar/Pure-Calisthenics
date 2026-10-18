@@ -56,14 +56,14 @@ const SectionFour = () => {
   return (
     <div className="w-full h-fit bg-white flex flex-col items-center justify-center">
       <div className="w-full pt-10 md:pt-20 pb-8 z-10 flex flex-col justify-center items-center">
-        <h1
+        <h2
           data-aos="fade-right"
           data-aos-duration="500"
           className={`${aspekta.className} w-4/5 text-start text-4xl md:text-6xl xl:text-7xl font-light text-black`}
         >
           Results & Changes After Calisthe
           <span className={`${ppeditorialul.className} text-main `}>n</span>ics
-        </h1>
+        </h2>
         <p
           data-aos="fade-right"
           data-aos-delay="150"

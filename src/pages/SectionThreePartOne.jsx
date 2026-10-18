@@ -21,7 +21,7 @@ const SectionThreePartOne = () => {
     <div className="bg-secondary w-full h-fit flex flex-col justify-center items-center pb-10">
       <div className="mt-20 w-full flex flex-col justify-center items-center">
         <div className="w-4/5">
-          <h1
+          <h2
             data-aos="fade-right"
             data-aos-duration="500"
             className={`${aspekta.className} text-5xl md:text-6xl xl:text-7xl font-light text-white text-start md:text-center`}
@@ -32,49 +32,52 @@ const SectionThreePartOne = () => {
               love
             </span>{" "}
             us
-          </h1>
+          </h2>
         </div>
         <div className="w-full mt-6 md:mt-7 xl:mt-8 flex flex-col md:flex-row justify-evenly items-center md:items-end">
           <div data-aos="fade-up" data-aos-duration="500">
             <div className="w-box md:w-[30vw] xl:w-80 my-2 flex justify-center items-center">
-              <h1
+              <h3
                 className={`${aspekta.className} flex h-20 w-full md:w-4/5 justify-start md:justify-center items-center text-lg font-medium text-white text-start md:text-center`}
               >
                 We have crystal clear systems & structure.
-              </h1>
+              </h3>
             </div>
             <img
-              src="/images/img1.jpg"
-              alt="image"
-              className="w-box h-box md:w-[30vw] md:h-[30vw] xl:w-80 xl:h-80 object-cover "
+              src="/images/img1.webp"
+              alt="Structured calisthenics equipment and workout area"
+              loading="lazy"
+              className="w-box h-box md:w-[30vw] md:h-[30vw] xl:w-80 xl:h-80 object-cover"
             />
           </div>
           <div data-aos="fade-up" data-aos-duration="500">
             <div className="w-box md:w-[30vw] xl:w-80 my-2 flex justify-center items-center">
-              <h1
+              <h3
                 className={`${aspekta.className} flex h-20 w-full md:w-4/5 justify-start md:justify-center items-center text-lg font-medium text-white text-start md:text-center`}
               >
                 We are passionate about teaching.
-              </h1>
+              </h3>
             </div>
             <img
-              src="/images/img2.jpg"
-              alt="image"
-              className="w-box h-box md:w-[30vw] md:h-[30vw] xl:w-80 xl:h-80 object-cover "
+              src="/images/img2.webp"
+              alt="Pure Calisthenics trainer coaching movement form"
+              loading="lazy"
+              className="w-box h-box md:w-[30vw] md:h-[30vw] xl:w-80 xl:h-80 object-cover"
             />
           </div>
           <div data-aos="fade-up" data-aos-duration="500">
             <div className="w-box md:w-[30vw] xl:w-80 my-2 flex justify-center items-center">
-              <h1
+              <h3
                 className={`${aspekta.className} flex h-20 w-full md:w-4/5 justify-start md:justify-center items-center text-lg font-medium text-white text-start md:text-center`}
               >
                 We bring improvements from the very start.
-              </h1>
+              </h3>
             </div>
             <img
-              src="/images/img3.jpg"
-              alt="image"
-              className="w-box h-box md:w-[30vw] md:h-[30vw] xl:w-80 xl:h-80 object-cover "
+              src="/images/img3.webp"
+              alt="Progressive calisthenics skill training session"
+              loading="lazy"
+              className="w-box h-box md:w-[30vw] md:h-[30vw] xl:w-80 xl:h-80 object-cover"
             />
           </div>
         </div>

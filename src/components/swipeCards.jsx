@@ -27,7 +27,7 @@ const SwipeCards = () => {
             >
               Self Confidence
             </div>
-            <h1 className="uppercase">⟵ Swipe ⟶</h1>
+            <p className="uppercase">⟵ Swipe ⟶</p>
           </SwiperSlide>
           <SwiperSlide className="grid place-items-center place-content-center rounded-full text-white bg-main">
             <div
@@ -35,7 +35,7 @@ const SwipeCards = () => {
             >
               Positive Self Image
             </div>
-            <h1 className="uppercase">⟵ Swipe ⟶</h1>
+            <p className="uppercase">⟵ Swipe ⟶</p>
           </SwiperSlide>
           <SwiperSlide className="grid place-items-center place-content-center rounded-full text-white bg-main">
             <div
@@ -43,7 +43,7 @@ const SwipeCards = () => {
             >
               Better Personality
             </div>
-            <h1 className="uppercase">⟵ Swipe ⟶</h1>
+            <p className="uppercase">⟵ Swipe ⟶</p>
           </SwiperSlide>
           <SwiperSlide className="grid place-items-center place-content-center rounded-full text-white bg-main">
             <div
@@ -51,7 +51,7 @@ const SwipeCards = () => {
             >
               Strong Mindset
             </div>
-            <h1 className="uppercase">⟵ Swipe ⟶</h1>
+            <p className="uppercase">⟵ Swipe ⟶</p>
           </SwiperSlide>
           <SwiperSlide className="grid place-items-center place-content-center rounded-full text-white bg-main">
             <div
@@ -59,7 +59,7 @@ const SwipeCards = () => {
             >
               Raw Strength
             </div>
-            <h1 className="uppercase">⟵ Swipe ⟶</h1>
+            <p className="uppercase">⟵ Swipe ⟶</p>
           </SwiperSlide>
           <SwiperSlide className="grid place-items-center place-content-center rounded-full text-white bg-main">
             <div
@@ -67,7 +67,7 @@ const SwipeCards = () => {
             >
               Sports Performance
             </div>
-            <h1 className="uppercase">⟵ Swipe ⟶</h1>
+            <p className="uppercase">⟵ Swipe ⟶</p>
           </SwiperSlide>
           <SwiperSlide className="grid place-items-center place-content-center rounded-full text-white bg-main">
             <div
@@ -75,7 +75,7 @@ const SwipeCards = () => {
             >
               Social Confidence
             </div>
-            <h1 className="uppercase">⟵ Swipe ⟶</h1>
+            <p className="uppercase">⟵ Swipe ⟶</p>
           </SwiperSlide>
           <SwiperSlide className="grid place-items-center place-content-center rounded-full text-white bg-main">
             <div
@@ -83,7 +83,7 @@ const SwipeCards = () => {
             >
               Better First Impressions
             </div>
-            <h1 className="uppercase">⟵ Swipe ⟶</h1>
+            <p className="uppercase">⟵ Swipe ⟶</p>
           </SwiperSlide>
           <SwiperSlide className="grid place-items-center place-content-center rounded-full text-white bg-main">
             <div
@@ -91,7 +91,7 @@ const SwipeCards = () => {
             >
               Life Long Longetivity
             </div>
-            <h1 className="uppercase">⟵ Swipe ⟶</h1>
+            <p className="uppercase">⟵ Swipe ⟶</p>
           </SwiperSlide>
           <SwiperSlide className="grid place-items-center place-content-center rounded-full text-white bg-main">
             <div
@@ -99,7 +99,7 @@ const SwipeCards = () => {
             >
               Attractive Physique
             </div>
-            <h1 className="uppercase">⟵ Swipe ⟶</h1>
+            <p className="uppercase">⟵ Swipe ⟶</p>
           </SwiperSlide>
           <SwiperSlide className="grid place-items-center place-content-center rounded-full text-white bg-main">
             <div
@@ -107,7 +107,7 @@ const SwipeCards = () => {
             >
               Control Over Bodyweight
             </div>
-            <h1 className="uppercase">⟵ Swipe ⟶</h1>
+            <p className="uppercase">⟵ Swipe ⟶</p>
           </SwiperSlide>
         </Swiper>
       </div>

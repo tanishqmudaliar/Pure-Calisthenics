@@ -4,8 +4,8 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import ContentPasteIcon from "@mui/icons-material/ContentPaste";
 import Phone from "@mui/icons-material/Phone";
 import Video from "next-video";
-import thumbnail from "../../public/images/thumbnail.png";
-import landing from "../../videos/landing.mp4";
+import thumbnail from "../../public/images/thumbnail.webp";
+import landing from "../../videos/landing.mp4.json";
 
 const aspekta = localFont({
   src: "../fonts/AspektaVF.woff2",
@@ -33,11 +33,11 @@ const SectionOne = () => {
       </div>
       <div className="flex flex-1 xl:flex-none flex-col justify-center items-center my-5">
         <div className="flex flex-col justify-center items-center">
-          <h1
+          <p
             className={`${aspekta.className} w-full text-center text-xl md:text-2xl xl:text-3xl font-light text-white`}
           >
             We Want You To Feel
-          </h1>
+          </p>
           <h1
             className={`${aspekta.className} w-full text-center text-[8.5vw]/[8.5vw] md:text-5xl xl:text-7xl font-normal text-white mb-5 xl:mb-7 mt-1`}
           >
@@ -45,22 +45,22 @@ const SectionOne = () => {
             <span className={ppeditorial.className}>Energetic.</span>
           </h1>
         </div>
-        <h1
+        <div
           className={`${aspekta.className} mx-5 text-center text-2xl md:text-3xl font-light text-white mb-5 xl:mb-7 flex flex-col justify-center items-center`}
         >
           Our Gym Environment is
-          <div className="text-start text-lg xl:text-xl grid grid-cols-2 gap-x-4 text-white">
+          <ul className="w-fit text-start text-lg xl:text-xl grid grid-cols-2 gap-x-8 text-white list-disc list-inside mt-2">
             <li>Supportive</li>
             <li>Acceptive</li>
             <li>Encouraging</li>
             <li>Unbiased</li>
-          </div>
-        </h1>
-        <h1
+          </ul>
+        </div>
+        <h2
           className={`${aspekta.className} w-3/4 text-center text-2xl md:text-3xl font-light text-white mb-4`}
         >
           Want to know more?
-        </h1>
+        </h2>
         <div className="flex flex-col md:flex-row justify-center items-center mb-3 md:mb-0">
           <div className="flex justify-center items-center">
             <div className="w-fit h-fit flex justify-center items-center shadow-[5px_5px_0px_#1e1e1e]">
