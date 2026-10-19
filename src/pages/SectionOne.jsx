@@ -18,20 +18,7 @@ const ppeditorial = localFont({
 const SectionOne = () => {
   return (
     <div className="w-full h-fit min-h-svh bg-main flex flex-col xl:flex-row justify-evenly items-center pt-20">
-      <div className="xl:hidden">
-        <Video
-          src={landing}
-          autoPlay
-          muted
-          loop
-          playsInline
-          controls={false}
-          poster={thumbnail}
-          blurDataURL={thumbnail.blurDataURL}
-          className="w-full h-auto object-cover"
-        />
-      </div>
-      <div className="flex flex-1 xl:flex-none flex-col justify-center items-center my-5">
+      <div className="flex flex-1 xl:flex-none flex-col justify-center items-center my-5 order-2 xl:order-1">
         <div className="flex flex-col justify-center items-center">
           <p
             className={`${aspekta.className} w-full text-center text-xl md:text-2xl xl:text-3xl font-light text-white`}
@@ -102,7 +89,7 @@ const SectionOne = () => {
           </div>
         </div>
       </div>
-      <div className="w-[40vw] h-auto shadow-[5px_5px_0px_#1e1e1e] hidden xl:flex">
+      <div className="w-full xl:w-[40vw] h-auto shadow-none xl:shadow-[5px_5px_0px_#1e1e1e] order-1 xl:order-2 flex justify-center items-center">
         <Video
           src={landing}
           autoPlay
@@ -112,7 +99,7 @@ const SectionOne = () => {
           controls={false}
           poster={thumbnail}
           blurDataURL={thumbnail.blurDataURL}
-          className="w-[40vw] h-auto bg-secondary object-cover border-2 border-secondary"
+          className="w-full xl:w-[40vw] h-auto bg-secondary object-cover border-0 xl:border-2 xl:border-secondary"
         />
       </div>
     </div>
