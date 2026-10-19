@@ -3,18 +3,18 @@ import "./globals.css";
 export const metadata = {
   metadataBase: new URL("https://purecalisthenics.com"),
   title: {
-    default: "Pure Calisthenics | Personal Training in Mumbai & Online",
+    default: "Pure Calisthenics | Be A Game Changer",
     template: "%s | Pure Calisthenics",
   },
   description:
-    "Premier calisthenics personal training in Mumbai and online. Build real strength, mobility, and body control with structured coaching.",
+    "Premier calisthenics personal training. Build real strength, mobility, and body control with structured coaching.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Pure Calisthenics | Personal Training in Mumbai & Online",
+    title: "Pure Calisthenics | Be A Game Changer",
     description:
-      "Premier calisthenics personal training in Mumbai and online. Build real strength, mobility, and body control with structured coaching.",
+      "Premier calisthenics personal training. Build real strength, mobility, and body control with structured coaching.",
     url: "https://purecalisthenics.com",
     siteName: "Pure Calisthenics",
     images: [
@@ -30,9 +30,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pure Calisthenics | Personal Training in Mumbai & Online",
+    title: "Pure Calisthenics | Be A Game Changer",
     description:
-      "Premier calisthenics personal training in Mumbai and online. Build real strength, mobility, and body control with structured coaching.",
+      "Premier calisthenics personal training. Build real strength, mobility, and body control with structured coaching.",
     images: ["/images/thumbnail.webp"],
   },
   icons: {

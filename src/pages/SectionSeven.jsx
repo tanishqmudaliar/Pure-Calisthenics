@@ -3,7 +3,10 @@ import React, { useEffect, useState } from "react";
 import localFont from "next/font/local";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { CircularProgress, Snackbar, Alert } from "@mui/material";
+import { CircularProgress, Snackbar } from "@mui/material";
+import CheckIcon from "@mui/icons-material/Check";
+import CloseIcon from "@mui/icons-material/Close";
+import ErrorOutlineIcon from "@mui/icons-material/ErrorOutline";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const theme = createTheme({
@@ -26,6 +29,63 @@ const aspekta = localFont({
 
 const ppeditorialul = localFont({
   src: "../fonts/ppeditorialold-ultralightitalic.otf",
+});
+
+// Sharp Box Alert matching the Section 1 button neo-brutalist theme
+const SharpAlert = React.forwardRef(function SharpAlert(
+  { message, severity = "success", onClose, ...other },
+  ref
+) {
+  const isError = severity === "error";
+
+  return (
+    <div
+      ref={ref}
+      role="alert"
+      {...other}
+      className="w-fit max-w-[92vw] sm:max-w-md md:max-w-lg shadow-[5px_5px_0px_#1e1e1e] select-none pointer-events-auto"
+    >
+      <div className="bg-white border-2 border-secondary p-3.5 sm:p-4 flex items-center justify-between gap-3 sm:gap-4">
+        <div className="flex items-center gap-3 min-w-0">
+          <div
+            className={`w-9 h-9 sm:w-10 sm:h-10 border-2 border-secondary flex items-center justify-center shrink-0 shadow-[2px_2px_0px_#1e1e1e] ${
+              isError ? "bg-[#f44336] text-white" : "bg-main text-white"
+            }`}
+          >
+            {isError ? (
+              <ErrorOutlineIcon className="text-xl sm:text-2xl" />
+            ) : (
+              <CheckIcon className="text-xl sm:text-2xl" />
+            )}
+          </div>
+          <div className="flex flex-col min-w-0 text-left">
+            <span
+              className={`${aspekta.className} text-[10px] sm:text-xs font-bold uppercase tracking-wider ${
+                isError ? "text-[#f44336]" : "text-main"
+              }`}
+            >
+              {isError ? "Error" : "Success"}
+            </span>
+            <p
+              className={`${aspekta.className} text-secondary text-xs sm:text-sm md:text-base font-semibold leading-snug break-words`}
+            >
+              {message}
+            </p>
+          </div>
+        </div>
+        {onClose && (
+          <button
+            type="button"
+            onClick={onClose}
+            aria-label="Close notification"
+            className="w-8 h-8 border-2 border-secondary bg-white text-secondary hover:bg-secondary hover:text-white flex items-center justify-center cursor-pointer shadow-[2px_2px_0px_#1e1e1e] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] transition-all duration-200 shrink-0 ml-1"
+          >
+            <CloseIcon className="text-base" />
+          </button>
+        )}
+      </div>
+    </div>
+  );
 });
 
 const SectionSeven = () => {
@@ -179,6 +239,14 @@ const SectionSeven = () => {
     }
   };
 
+  // Handle snackbar close (ignore clickaway to ensure user has time to read)
+  const handleSnackbarClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setSnackbar((prev) => ({ ...prev, open: false }));
+  };
+
   return (
     <ThemeProvider theme={theme}>
       <div className="w-full bg-main py-20 flex justify-center items-center flex-col xl:flex-row">
@@ -316,17 +384,14 @@ const SectionSeven = () => {
         <Snackbar
           open={snackbar.open}
           autoHideDuration={7000}
-          onClose={() => setSnackbar((prev) => ({ ...prev, open: false }))}
+          onClose={handleSnackbarClose}
           anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
         >
-          <Alert
+          <SharpAlert
             onClose={() => setSnackbar((prev) => ({ ...prev, open: false }))}
             severity={snackbar.severity}
-            variant="filled"
-            sx={{ width: "100%", fontSize: "0.95rem" }}
-          >
-            {snackbar.message}
-          </Alert>
+            message={snackbar.message}
+          />
         </Snackbar>
       </div>
     </ThemeProvider>
